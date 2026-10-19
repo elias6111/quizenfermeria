@@ -1,0 +1,323 @@
+.apuntes {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem 1rem 4rem;
+}
+
+.vista {
+  width: min(820px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.vista > h1 {
+  max-width: none;
+  font-size: clamp(2.2rem, 7vw, 3.8rem);
+  text-align: center;
+}
+
+.subtitulo {
+  margin-top: -0.75rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--rosa-oscuro);
+  text-align: center;
+}
+
+/* Migas de pan */
+.migas {
+  width: min(820px, 100%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.migas a {
+  color: var(--rosa-oscuro);
+  text-decoration: none;
+  padding: 0.2rem 0.7rem;
+  background: rgba(255, 255, 255, 0.55);
+  border-radius: 999px;
+}
+
+.migas a:hover {
+  background: #fff;
+}
+
+.migas [aria-current] {
+  color: var(--ciruela);
+  font-weight: 600;
+}
+
+.migas-separador {
+  color: var(--rosa-intenso);
+}
+
+/* Asignaturas (se reutiliza .lista y .asignatura de asignaturas.css) */
+.asignatura-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.asignatura-texto small {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--rosa-oscuro);
+}
+
+/* Botones con icono */
+.boton svg,
+.accion svg {
+  width: 1.2em;
+  height: 1.2em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.boton-descarga {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0;
+  padding: 0.75rem 1.8rem;
+  font-size: 1.1rem;
+}
+
+/* Bloques de temas */
+.bloque {
+  width: 100%;
+}
+
+.bloque h2 {
+  margin: 0.5rem 0 0.9rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+}
+
+.temas {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.tema {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  padding: 1.1rem 1.2rem;
+  background: var(--rosa-claro);
+  border-radius: 20px;
+  box-shadow: 0 5px 0 rgba(161, 29, 75, 0.3);
+}
+
+.tema-enlace {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  color: var(--ciruela);
+  text-decoration: none;
+}
+
+.tema-enlace:hover .tema-titulo {
+  color: var(--rosa-intenso);
+}
+
+.tema-numero {
+  flex: none;
+  min-width: 2.7rem;
+  height: 2.7rem;
+  display: grid;
+  place-items: center;
+  padding: 0 0.4rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--rosa-intenso);
+  border-radius: 14px;
+  box-shadow: 0 3px 0 var(--rosa-oscuro);
+}
+
+.tema-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.tema-titulo {
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: color 0.15s ease;
+}
+
+.tema-esencial {
+  font-size: 0.92rem;
+  font-weight: 500;
+  line-height: 1.35;
+  color: #7a3a58;
+}
+
+.tema-acciones {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.accion {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+  text-decoration: none;
+  background: #fff;
+  border: 2px solid var(--rosa-intenso);
+  border-radius: 999px;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.accion:hover {
+  background: var(--rosa-intenso);
+  color: #fff;
+}
+
+.accion-llena {
+  color: #fff;
+  background: var(--rosa-intenso);
+}
+
+.accion-llena:hover {
+  background: var(--rosa-oscuro);
+  border-color: var(--rosa-oscuro);
+}
+
+/* Visor */
+.visor-cabecera {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tema-numero-grande {
+  min-width: 3.6rem;
+  height: 3.6rem;
+  font-size: 1.6rem;
+  border-radius: 18px;
+}
+
+.visor-asignatura {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rosa-oscuro);
+}
+
+.visor-titulo {
+  max-width: none;
+  font-size: clamp(1.6rem, 5vw, 2.4rem);
+}
+
+.visor-acciones {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.boton-secundario-enlace {
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+}
+
+.visor-marco {
+  width: 100%;
+  padding: 0.6rem;
+  background: var(--rosa-claro);
+  border-radius: 22px;
+  box-shadow: 0 5px 0 rgba(161, 29, 75, 0.3);
+}
+
+.visor {
+  display: block;
+  width: 100%;
+  height: min(82vh, 1100px);
+  border: 0;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.visor-aviso {
+  margin-top: -0.6rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #7a3a58;
+  text-align: center;
+}
+
+.visor-navegacion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.visor-navegacion a {
+  padding: 0.55rem 1.3rem;
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+  text-decoration: none;
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 0 3px 0 rgba(161, 29, 75, 0.3);
+}
+
+.visor-navegacion a:hover {
+  background: var(--rosa-claro);
+}
+
+.migas a:focus-visible,
+.accion:focus-visible,
+.tema-enlace:focus-visible,
+.visor-navegacion a:focus-visible,
+.boton-secundario-enlace:focus-visible {
+  outline: 3px solid var(--ciruela);
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  .temas {
+    grid-template-columns: 1fr;
+  }
+
+  .visor {
+    height: 70vh;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .accion,
+  .tema-titulo {
+    transition: none;
+  }
+}

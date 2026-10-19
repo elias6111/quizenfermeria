@@ -101,6 +101,19 @@ h1 {
   outline-offset: 4px;
 }
 
+/* Botones de la portada */
+.portada-botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.boton-claro {
+  color: var(--rosa-oscuro);
+  background: #fff;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .latido path {
     animation: none;
