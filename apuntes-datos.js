@@ -108,6 +108,183 @@ const asignaturasApuntes = [
         ]
       }
     ]
+  },
+  {
+    id: "fisiologia",
+    nombre: "Fisiología",
+    descripcion: "Fisiología general, hematología y sistemas circulatorio, renal y respiratorio",
+    completo: "fisiologia-completo",
+    bloques: [
+      {
+        titulo: "Bloque I · Fisiología general",
+        temas: [
+          {
+            numero: "1",
+            titulo: "Introducción a la fisiología",
+            esencial: "Medio interno, homeostasis, membrana celular, transporte y receptores",
+            archivo: "tema-01"
+          },
+          {
+            numero: "2",
+            titulo: "Líquidos corporales",
+            esencial: "Agua corporal total, LIC y LEC, ósmosis, osmolaridad y tonicidad",
+            archivo: "tema-02"
+          },
+          {
+            numero: "3–4",
+            titulo: "Potenciales eléctricos",
+            esencial: "Potencial de reposo, canales iónicos, potencial de acción, periodo refractario y conducción saltatoria",
+            archivo: "tema-03-04"
+          },
+          {
+            numero: "5",
+            titulo: "Transmisión sináptica",
+            esencial: "Sinapsis eléctrica y química, etapas, receptores ionotrópicos y metabotrópicos, glutamato y GABA",
+            archivo: "tema-05"
+          },
+          {
+            numero: "6",
+            titulo: "Sistema nervioso autónomo",
+            esencial: "Simpático frente a parasimpático, neurotransmisores, receptores, médula adrenal y doble inervación",
+            archivo: "tema-06"
+          }
+        ]
+      },
+      {
+        titulo: "Bloque II · Hematología",
+        temas: [
+          {
+            numero: "7",
+            titulo: "Propiedades de la sangre y hematíes",
+            esencial: "Plasma y suero, hematocrito, hematopoyesis, eritropoyesis, hemocatéresis y anemias",
+            archivo: "tema-07"
+          },
+          {
+            numero: "8",
+            titulo: "Leucocitos e inmunidad",
+            esencial: "Tipos de leucocitos, fagocitosis, anticuerpos, inmunidad innata y adquirida, grupos AB0 y Rh",
+            archivo: "tema-08"
+          },
+          {
+            numero: "9",
+            titulo: "Plaquetas y hemostasia",
+            esencial: "Trombopoyesis, hemostasia primaria, cascada de coagulación, vitamina K y fibrinólisis",
+            archivo: "tema-09"
+          }
+        ]
+      },
+      {
+        titulo: "Bloque III · Sistema circulatorio",
+        temas: [
+          {
+            numero: "10",
+            titulo: "Introducción al sistema cardiovascular",
+            esencial: "Circulación mayor y menor, válvulas, sístole y diástole, gasto cardiaco y ley de Ohm",
+            archivo: "tema-10"
+          },
+          {
+            numero: "11",
+            titulo: "Actividad eléctrica cardíaca",
+            esencial: "Células contráctiles y marcapasos, fases del potencial, sistema de conducción y electrocardiograma",
+            archivo: "tema-11"
+          },
+          {
+            numero: "12",
+            titulo: "Ciclo cardíaco",
+            esencial: "Fases del ciclo, volúmenes, fracción de eyección, ruidos cardiacos y ley de Frank-Starling",
+            archivo: "tema-12"
+          },
+          {
+            numero: "13",
+            titulo: "Sistema arterial",
+            esencial: "Distensibilidad y elasticidad, presión arterial, PAM, resistencia (radio⁴) y barorreceptores",
+            archivo: "tema-13"
+          },
+          {
+            numero: "14",
+            titulo: "Circulación venosa",
+            esencial: "Venas como reservorio, retorno venoso, bomba muscular y respiratoria, varices y bipedestación",
+            archivo: "tema-14"
+          },
+          {
+            numero: "15",
+            titulo: "Capilares y sistema linfático",
+            esencial: "Microcirculación, regulación local del flujo, intercambio capilar, sistema linfático y edema",
+            archivo: "tema-15"
+          }
+        ]
+      },
+      {
+        titulo: "Bloque IV · Sistema renal",
+        temas: [
+          {
+            numero: "16",
+            titulo: "Principios básicos de la función renal",
+            esencial: "Funciones del riñón, nefrona, aparato yuxtaglomerular, circulación renal y formación de orina",
+            archivo: "tema-16"
+          },
+          {
+            numero: "17",
+            titulo: "Procesos renales básicos",
+            esencial: "Barrera de filtración, TFG, presión neta de filtración, autorregulación, aclaramiento y transporte tubular",
+            archivo: "tema-17"
+          },
+          {
+            numero: "18",
+            titulo: "Funciones reguladoras del riñón",
+            esencial: "Balance de agua, ADH, orina diluida y concentrada, SRAA, péptidos natriuréticos y equilibrio ácido-base",
+            archivo: "tema-18"
+          },
+          {
+            numero: "19",
+            titulo: "Micción",
+            esencial: "Vejiga y esfínteres, reflejo de micción, fases de llenado y vaciamiento, alteraciones",
+            archivo: "tema-19"
+          }
+        ]
+      },
+      {
+        titulo: "Bloque V · Sistema respiratorio",
+        temas: [
+          {
+            numero: "20",
+            titulo: "Introducción al sistema respiratorio",
+            esencial: "Funciones, vías aéreas, zonas de conducción y respiratoria, neumocitos, pleura y circulación pulmonar",
+            archivo: "tema-20"
+          },
+          {
+            numero: "21",
+            titulo: "Volúmenes y capacidades pulmonares",
+            esencial: "Volúmenes, capacidades, espirometría, índice de Tiffeneau, patrones y tipos de respiración",
+            archivo: "tema-21"
+          },
+          {
+            numero: "22",
+            titulo: "Mecánica y ventilación pulmonar",
+            esencial: "Surfactante y ley de Laplace, músculos, presiones, ley de Boyle, espacio muerto y presiones parciales",
+            archivo: "tema-22"
+          },
+          {
+            numero: "23",
+            titulo: "Circulación pulmonar e intercambio de gases",
+            esencial: "Difusión, relación V/Q, leyes de Dalton, Henry y Fick, presiones parciales y enfermedades",
+            archivo: "tema-23"
+          },
+          {
+            numero: "24",
+            titulo: "Transporte de gases",
+            esencial: "Transporte de CO₂ y O₂, anhidrasa carbónica, saturación y curva de disociación de la hemoglobina",
+            archivo: "tema-24"
+          },
+          {
+            numero: "25",
+            titulo: "Regulación de la respiración",
+            esencial: "Centros respiratorios del tronco del encéfalo, quimiorreceptores y mecanorreceptores",
+            archivo: "tema-25"
+          }
+        ]
+      }
+    ]
   }
 ];
 
