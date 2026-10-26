@@ -1,5 +1,5 @@
 // Genera los PDF de los apuntes a partir de los fragmentos HTML de apuntes/fuentes.
-// Uso (desde la carpeta del proyecto):  node apuntes/generar-pdf.js
+// Uso (desde la carpeta del proyecto):  node apuntes/generar-pdf.js [asignatura] [tema-XX]
 // Necesita Microsoft Edge o Google Chrome instalado (se usa en modo headless para imprimir).
 const fs = require("fs");
 const path = require("path");
@@ -89,9 +89,14 @@ function imprimir(html, destino) {
   console.log("✓", path.relative(process.cwd(), destino));
 }
 
-const soloArchivo = process.argv[2]; // opcional: generar solo un tema, p. ej. "tema-04"
+// Opcional: limitar a una asignatura y/o a un tema, p. ej. "fisiologia", "tema-04" o "fisiologia tema-04"
+const argumentos = process.argv.slice(2);
+const soloAsignatura = asignaturas.some((a) => a.id === argumentos[0]) ? argumentos.shift() : null;
+const soloArchivo = argumentos[0];
 
 asignaturas.forEach((asignatura) => {
+  if (soloAsignatura && asignatura.id !== soloAsignatura) return;
+
   const salida = path.join(carpetaPdf, asignatura.id);
   fs.mkdirSync(salida, { recursive: true });
 
