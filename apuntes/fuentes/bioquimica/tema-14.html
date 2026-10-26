@@ -1,0 +1,128 @@
+<section class="imprescindible">
+  <h2>Lo imprescindible</h2>
+  <ul>
+    <li><strong>Dogma central:</strong> replicación (ADN → ADN), <strong>transcripción (ADN → ARN)</strong>, traducción (ARN → proteína).</li>
+    <li>Replicación <strong>semiconservativa</strong>: cada ADN hijo tiene una cadena vieja y una nueva. La ADN polimerasa solo sintetiza <strong>5'→3'</strong>: hebra retardada en <strong>fragmentos de Okazaki</strong>, que une la <strong>ADN ligasa</strong>.</li>
+    <li>La ARN polimerasa <strong>no repara errores</strong>: si detecta uno, desecha el ARN. El factor <strong>σ</strong> reconoce el promotor.</li>
+    <li>Maduración del pre-ARNm: <strong>caperuza (CAP) en 5'</strong>, <strong>cola de poli-A en 3'</strong> y <strong>splicing</strong> (fuera intrones, se unen exones).</li>
+    <li>Codón de inicio <strong>AUG (metionina)</strong>; codones de parada <strong>UAA, UAG, UGA</strong>. Las proteínas citoplasmáticas se degradan por <strong>ubiquitina-proteosoma</strong>.</li>
+  </ul>
+</section>
+
+<p>La <strong>replicación</strong> y la <strong>transcripción</strong> ocurren en el <strong>núcleo</strong> (donde está el ADN); el ARNm sale al <strong>citosol</strong> y la <strong>traducción</strong> ocurre en los <strong>ribosomas</strong>. La síntesis de proteínas es carísima: hasta el <strong>80 % del gasto energético</strong> de la célula.</p>
+
+<h2>1. Replicación del ADN <span class="nivel alto">Muy importante</span></h2>
+<ul>
+  <li>Es <mark>semiconservativa</mark>: cada molécula hija conserva una cadena molde original y otra recién sintetizada (se descartaron los modelos conservativo y dispersivo).</li>
+  <li>Es <strong>bidireccional</strong>: desde cada origen salen dos horquillas. <strong>Eucariotas: muchos orígenes</strong>; procariotas: uno solo (<strong>OriC</strong>).</li>
+  <li>La maquinaria se llama <strong>replisoma</strong> y trabaja en la <strong>horquilla de replicación</strong>.</li>
+</ul>
+<table>
+  <tr><th>Proteína (<em>E. coli</em>)</th><th>Función</th></tr>
+  <tr><td class="destacada">ADN girasa (topoisomerasa II)</td><td>Controla el superenrollamiento para poder copiar</td></tr>
+  <tr><td class="destacada">Helicasa (DnaB)</td><td><mark>Abre la doble hélice</mark> rompiendo los puentes de H</td></tr>
+  <tr><td class="destacada">SSB</td><td>Se une al ADN de hebra simple y evita que se vuelva a cerrar</td></tr>
+  <tr><td class="destacada">Primasa</td><td>Sintetiza el <strong>ARN cebador</strong></td></tr>
+  <tr><td class="destacada">ADN polimerasa III</td><td>La <mark>que realmente copia</mark> (elongación), solo 5'→3'</td></tr>
+  <tr><td class="destacada">ADN polimerasa I</td><td>Quita los cebadores, rellena huecos; también repara</td></tr>
+  <tr><td class="destacada">ADN polimerasa II</td><td>Reparación de nucleótidos erróneos</td></tr>
+  <tr><td class="destacada">ADN ligasa</td><td>Une los fragmentos</td></tr>
+</table>
+<h3>Iniciación en <em>E. coli</em></h3>
+<ol>
+  <li><strong>DnaA</strong>, gastando ATP, reconoce el origen <strong>OriC</strong> y se acumula, distorsionando el ADN.</li>
+  <li>OriC es <mark>rico en pares A-T</mark> (solo 2 puentes de H): zona débil, fácil de abrir.</li>
+  <li>La <strong>helicasa (DnaB)</strong> sigue desenrollando y las <strong>proteínas SSB</strong> estabilizan las cadenas sueltas.</li>
+</ol>
+<h3>Elongación</h3>
+<div class="dos-columnas">
+  <figure>
+    <img src="../../../img/bioquimica3/horquilla.svg" alt="Horquilla de replicación con hebra continua y fragmentos de Okazaki marcados con X">
+    <figcaption>Horquilla de replicación. <strong>X</strong> = fragmentos de Okazaki de la hebra retardada, cada uno con su ARN cebador.</figcaption>
+  </figure>
+  <div>
+    <ul>
+      <li>La ADN polimerasa <mark>solo sintetiza en sentido 5'→3'</mark> y necesita un <strong>cebador de ARN</strong> (lo hace la <strong>primasa</strong>).</li>
+      <li><strong>Hebra conductora:</strong> continua.</li>
+      <li><strong>Hebra retardada:</strong> discontinua, en <mark>fragmentos de Okazaki</mark>.</li>
+      <li>La <strong>ADN polimerasa I</strong> cambia el cebador por ADN y la <mark>ADN ligasa</mark> une los fragmentos.</li>
+      <li>Las ADN polimerasas <strong>corrigen sus errores</strong> (actividad exonucleasa 3'→5').</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>Terminación:</strong> al llegar a los extremos, las polimerasas I y II corrigen errores, la I cambia los cebadores por ADN y la ligasa une los fragmentos de Okazaki. En <em>E. coli</em> hay sitios de terminación <strong>Ter</strong>, reconocidos por la proteína <strong>Tus</strong> (una contrahelicasa).</p>
+
+<h2>2. Transcripción <span class="nivel alto">Muy importante</span></h2>
+<ul>
+  <li>Solo se transcriben las secuencias con información: los <strong>genes</strong> (no toda la molécula, como en la replicación). Hay que reconocer un sitio de inicio y uno de terminación.</li>
+  <li>Se copia solo la <strong>hebra molde</strong> (3'→5'); el ARN es <strong>antiparalelo y complementario</strong> a ella. Sustratos: NTP.</li>
+  <li>La <strong>ARN polimerasa</strong> copia una cadena de ADN en ARN (5'→3'), sin necesidad de cebador.</li>
+  <li>En <em>E. coli</em>, el núcleo de la enzima (α₂ββ'ω) necesita el <mark>factor σ (sigma)</mark> para <strong>reconocer el promotor</strong>: solo la <strong>holoenzima</strong> (núcleo + σ) puede iniciar.</li>
+  <li>Secuencias consenso del promotor: <strong>TTGACA</strong> + 16-17 nucleótidos + <strong>TATAAT</strong>. Cuanto más se parezca un promotor a ellas, <strong>más fuerte</strong> es.</li>
+  <li>La ARN polimerasa desenrolla el ADN (hace de girasa y helicasa) y forma la <strong>burbuja de transcripción</strong>; avanza «como un gusano» (compresión y expansión).</li>
+  <li><strong>Terminación:</strong> dependiente de secuencia (zona rica en <strong>C-G</strong> que forma una horquilla + unas 6 U seguidas) o dependiente de la proteína <strong>ρ (rho)</strong>, un hexámero con actividad ATPasa que desestabiliza el complejo.</li>
+  <li><strong>Errores:</strong> hay un chequeo cada 10 nucleótidos, pero la ARN polimerasa <mark>no puede reparar</mark>: detiene la copia y desecha el ARN erróneo.</li>
+</ul>
+<div class="caja clave">
+  <span class="etiqueta">★ Clave de examen</span>
+  <p><strong>ADN polimerasa:</strong> necesita cebador y <strong>corrige</strong> errores (3'→5'). <strong>ARN polimerasa:</strong> no necesita cebador y <strong>no corrige</strong> (desecha la molécula).</p>
+</div>
+
+<h3>Maduración del ARNm en eucariotas</h3>
+<table>
+  <tr><th>Modificación</th><th>Qué es</th></tr>
+  <tr><td class="destacada">Extremo 5'</td><td><mark>Caperuza (CAP) de 7-metilguanosina</mark></td></tr>
+  <tr><td class="destacada">Extremo 3'</td><td><mark>Cola de poli-A</mark> (poliadeninas)</td></tr>
+  <tr><td class="destacada">Splicing (corte y empalme)</td><td>Se eliminan los <strong>intrones</strong> y se unen los <strong>exones</strong> (espliceosoma, con snRNA)</td></tr>
+</table>
+<p>La caperuza y la cola protegen al ARNm de las enzimas del citoplasma. Además se <strong>modifican bases</strong> y unas ribonucleasas separan los ARNt y ARNr de sus transcritos precursores.</p>
+
+<h2>3. Código genético <span class="nivel alto">Muy importante</span></h2>
+<ul>
+  <li>Cada <strong>codón</strong> = 3 nucleótidos → <strong>64 codones</strong>: 61 codifican aminoácidos y 3 son de parada.</li>
+  <li><strong>Inicio:</strong> <mark>AUG → metionina</mark>. La Met iniciadora suele eliminarse después (aminopeptidasa).</li>
+  <li><strong>Parada (STOP):</strong> <mark>UAA, UAG, UGA</mark>. No codifican aminoácidos; los reconocen los <strong>factores de liberación</strong>.</li>
+  <li>Es <strong>degenerado</strong> (varios codones por aminoácido), <strong>casi universal</strong>, sin solapamientos y sin comas.</li>
+</ul>
+<div class="caja truco">
+  <span class="etiqueta">Truco para recordar</span>
+  <p>STOP: «<strong>U A</strong>re <strong>A</strong>way, <strong>U A</strong>re <strong>G</strong>one, <strong>U G</strong>o <strong>A</strong>way» → UAA, UAG, UGA. Todos empiezan por <strong>U</strong>.</p>
+</div>
+
+<h2>4. Traducción <span class="nivel medio">Importante</span></h2>
+<ol>
+  <li><strong>Activación</strong> (en el citoplasma): la aminoacil-ARNt sintetasa une cada aminoácido a su ARNt por un <strong>enlace éster</strong> (gasta ATP) → aminoacil-ARNt, rico en energía. El aminoácido no reconoce el codón por sí mismo: el <strong>ARNt hace de adaptador</strong>.</li>
+  <li><strong>Iniciación:</strong> se forma el complejo ARNm + ribosoma + Met-ARNt sobre el AUG. Gasta <strong>GTP</strong>.</li>
+  <li><strong>Elongación:</strong> los aminoacil-ARNt entran por el sitio <strong>A</strong>, la cadena crece en el sitio <strong>P</strong> (peptidil transferasa forma el enlace peptídico) y el ARNt vacío sale por el <strong>E</strong>. Gasta <strong>GTP</strong>.</li>
+  <li><strong>Terminación:</strong> al llegar a un codón STOP, los factores de liberación sueltan la proteína.</li>
+</ol>
+
+<h2>5. Maduración y degradación de las proteínas <span class="nivel medio">Importante</span></h2>
+<ul>
+  <li><strong>Proteólisis:</strong> degradación de las propias proteínas por <strong>proteasas</strong>. Es la principal fuente endógena de aminoácidos y un mecanismo de control que elimina proteínas defectuosas o innecesarias.</li>
+  <li><strong>Maduración postraduccional:</strong> eliminación de la Met inicial, plegamiento (chaperonas), glicosilación, fosforilación, hidroxilación (colágeno, tema 6), proteólisis parcial (proinsulina → insulina).</li>
+  <li><strong>Degradación en el citoplasma:</strong> sistema <mark>ubiquitina-proteosoma</mark>. La <strong>ubiquitina marca</strong> la proteína y el <strong>proteosoma la rompe</strong> (destaca la secuencia PEST, típica de proteínas de vida corta).</li>
+  <li><strong>Degradación en lisosomas:</strong> sobre todo proteínas <strong>extracelulares</strong> o captadas por endocitosis.</li>
+</ul>
+
+<div class="caja ampliacion">
+  <span class="etiqueta">Ampliación</span>
+  <p><strong>Eucariotas:</strong> la <strong>telomerasa</strong> completa los extremos de los cromosomas. Hay tres ARN polimerasas: la <strong>I</strong> (ARNr), la <strong>II</strong> (ARNm) y la <strong>III</strong> (ARNt). El <strong>splicing alternativo</strong> permite obtener varias proteínas de un mismo gen.</p>
+</div>
+
+<section class="repaso">
+  <h2>Repaso en 1 minuto</h2>
+  <ol>
+    <li>Transcripción = <strong>ADN → ARN</strong>.</li>
+    <li>Replicación <strong>semiconservativa</strong>.</li>
+    <li>OriC rico en <strong>A-T</strong>; lo abre DnaA.</li>
+    <li>ADN pol: solo <strong>5'→3'</strong>.</li>
+    <li>Okazaki: los une la <strong>ligasa</strong>.</li>
+    <li>Factor <strong>σ</strong>: reconoce el promotor.</li>
+    <li>ARN pol <strong>no repara</strong>: desecha.</li>
+    <li>5' <strong>CAP</strong> · 3' <strong>poli-A</strong> · splicing.</li>
+    <li>Inicio <strong>AUG (Met)</strong> · STOP UAA, UAG, UGA.</li>
+    <li>Citoplasma: <strong>ubiquitina-proteosoma</strong>.</li>
+  </ol>
+</section>

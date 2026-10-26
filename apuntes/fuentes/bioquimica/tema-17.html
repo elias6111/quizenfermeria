@@ -1,0 +1,109 @@
+<section class="imprescindible">
+  <h2>Lo imprescindible</h2>
+  <ul>
+    <li><strong>PCR:</strong> obtiene <strong>millones de copias</strong> de un fragmento de ADN delimitado por dos cebadores (≈ 30-40 ciclos).</li>
+    <li><strong>RT-PCR:</strong> la transcriptasa inversa pasa ARN → ADNc (virus de ARN como el SARS-CoV-2). <strong>qPCR (tiempo real):</strong> cuantifica; <strong>cuantos menos ciclos tarda en cruzar el umbral, más carga</strong>.</li>
+    <li><strong>Sanger:</strong> un pico = homocigoto; <strong>dos picos superpuestos = heterocigoto</strong>.</li>
+    <li><strong>Cariotipo:</strong> ordena los cromosomas; detecta cambios de <strong>número</strong> y alteraciones <strong>grandes</strong>. Diagnóstico prenatal.</li>
+    <li><strong>Array CGH:</strong> paciente (verde) frente a control (rojo). Puntos <strong>hacia arriba = ganancia</strong>; <strong>hacia abajo = pérdida</strong>.</li>
+  </ul>
+</section>
+
+<p>Son técnicas para identificar marcadores en el material genético. Sirven para: <strong>diagnóstico prenatal</strong>, <strong>farmacogenómica</strong> (elegir tratamiento y minimizar efectos adversos: <strong>medicina personalizada</strong>), <strong>diagnóstico de enfermedades hereditarias</strong> (evolución y pronóstico) y de <strong>enfermedades infecciosas</strong>. Van de lo más general (cariotipo) a lo más concreto (secuenciación).</p>
+
+<h2>1. PCR (reacción en cadena de la polimerasa) <span class="nivel alto">Muy importante</span></h2>
+<p>Sirve para <mark>amplificar un fragmento concreto de ADN</mark> y obtener suficientes copias para secuenciarlo y detectar mutaciones, polimorfismos o pequeñas deleciones/inserciones. Usos: enfermedades infecciosas, <strong>criminalística</strong> y enfermedades hereditarias.</p>
+<h3>Componentes</h3>
+<p>ADN molde · <strong>dos cebadores</strong> (secuencias cortas conocidas que delimitan el fragmento) · <strong>ADN polimerasa termoestable</strong> · nucleótidos (dNTP) · <strong>termociclador</strong> (aparato que cambia la temperatura en cada ciclo).</p>
+<h3>Cada ciclo tiene tres pasos</h3>
+<table>
+  <tr><th>Paso</th><th>Temperatura</th><th>Qué ocurre</th></tr>
+  <tr><td class="destacada">1. Desnaturalización</td><td>≈ 94-95 °C</td><td>Se separan las dos cadenas</td></tr>
+  <tr><td class="destacada">2. Hibridación (anillamiento)</td><td>≈ 50-65 °C</td><td>Los cebadores se unen a sus secuencias complementarias</td></tr>
+  <tr><td class="destacada">3. Extensión</td><td>≈ 72 °C</td><td>La polimerasa sintetiza la cadena nueva</td></tr>
+</table>
+<p>En cada ciclo se <strong>duplica</strong> el número de copias (crecimiento exponencial). Se repite hasta unos <strong>40 ciclos</strong>.</p>
+
+<h3>Variantes de la PCR</h3>
+<table>
+  <tr><th>Técnica</th><th>Para qué</th></tr>
+  <tr><td class="destacada">RT-PCR</td><td>Partir de <strong>ARN</strong> cuando no hay ADN: la <mark>transcriptasa inversa</mark> lo pasa a ADN complementario (ADNc, que no tiene intrones). Es cualitativa</td></tr>
+  <tr><td class="destacada">PCR en tiempo real (qPCR)</td><td><mark>Cuantificar</mark>: sondas fluorescentes muestran la amplificación en cada ciclo</td></tr>
+  <tr><td class="destacada">RT-qPCR</td><td>Cuantificar un <strong>virus de ARN</strong> (ej.: SARS-CoV-2)</td></tr>
+</table>
+
+<div class="dos-columnas">
+  <figure>
+    <img src="../../../img/bioquimica3/pcr-tiempo-real.svg" alt="Curvas de PCR en tiempo real de cuatro pacientes">
+    <figcaption>B cruza el umbral antes (ciclo ≈ 8) → <strong>mayor carga viral</strong>. A y C también son positivos. D es negativo.</figcaption>
+  </figure>
+  <div class="caja clave">
+    <span class="etiqueta">★ Clave de examen</span>
+    <p>La curva empieza plana, luego sube de forma <strong>exponencial</strong> y acaba en <strong>meseta</strong>. En la qPCR, <strong>cuanto más virus hay, menos ciclos</strong> hacen falta para que la fluorescencia supere el umbral (el valor <strong>Ct</strong> es menor). Una curva plana = <strong>negativo</strong>.</p>
+  </div>
+</div>
+
+<h2>2. Secuenciación <span class="nivel alto">Muy importante</span></h2>
+<div class="dos-columnas">
+  <div>
+    <h3>Sanger</h3>
+    <ul>
+      <li>Lee la secuencia de un fragmento base a base. Usa <strong>didesoxinucleótidos</strong> marcados con fluorescencia que detienen la cadena.</li>
+      <li>El resultado es un <strong>electroferograma</strong> (un pico de color por base).</li>
+      <li><mark>Un pico</mark> en una posición → <strong>homocigoto</strong>.</li>
+      <li><mark>Dos picos superpuestos</mark> → <strong>heterocigoto</strong> (cada alelo con una base).</li>
+      <li>Después se compara con un ADN control.</li>
+    </ul>
+  </div>
+  <figure>
+    <img src="../../../img/bioquimica3/sanger.svg" alt="Electroferograma de secuenciación Sanger con dos picos superpuestos en una posición">
+    <figcaption>En <strong>?</strong> se superponen un pico de G y otro de A → heterocigoto G/A.</figcaption>
+  </figure>
+</div>
+<h3>Secuenciación masiva (NGS, alto rendimiento)</h3>
+<p>Secuencia <strong>miles o millones de fragmentos a la vez</strong>: <strong>paneles</strong> de genes, <strong>exoma</strong> (todos los exones, <em>whole-exome</em>) o <strong>genoma completo</strong> (<em>whole-genome</em>). Se usa para enfermedades hereditarias, dianas terapéuticas (cáncer) y medicina personalizada.</p>
+
+<h2>3. Citogenética: cariotipo, FISH y array CGH <span class="nivel alto">Muy importante</span></h2>
+<table>
+  <tr><th>Técnica</th><th>Qué hace</th><th>Qué detecta</th></tr>
+  <tr><td class="destacada">Cariotipo</td><td>Fotografía los cromosomas en metafase (bandas G) y los <mark>ordena por tamaño y morfología</mark> en un ideograma</td><td>Cambios de <strong>número</strong> (trisomías) y alteraciones <strong>grandes</strong> (deleciones, inserciones, translocaciones). <strong>Diagnóstico prenatal</strong></td></tr>
+  <tr><td class="destacada">FISH</td><td>Se desnaturaliza el ADN y se hibrida con una <strong>sonda</strong> marcada con fluorocromos, que marca un cromosoma entero o una zona</td><td>Deleciones (falta el punto de color) o duplicaciones (punto doble). Dice <strong>qué</strong> falta, no por qué</td></tr>
+  <tr><td class="destacada">Array CGH</td><td>Compara el ADN del paciente (verde) con un ADN control (rojo) hibridados sobre un chip con sondas</td><td><mark>Ganancias y pérdidas</mark> en todo el genoma (no las translocaciones equilibradas)</td></tr>
+  <tr><td class="destacada">Array SNP</td><td>Igual, pero con sondas de nucleótidos concretos</td><td>Cambios de un nucleótido en todos los cromosomas</td></tr>
+</table>
+<div class="dos-columnas">
+  <figure>
+    <img src="../../../img/bioquimica3/array-cgh.svg" alt="Resultado de array CGH con ganancia en el cromosoma 21 y pérdida en el X">
+    <figcaption>Cromosoma 21 por encima de la banda normal (ganancia) y X por debajo (pérdida).</figcaption>
+  </figure>
+  <div class="caja truco">
+    <span class="etiqueta">Truco para recordar</span>
+    <p>Array CGH: entre las dos líneas está la normalidad (<strong>amarillo</strong> = igual que el control). <strong>Sube = sobra</strong> (verde, más ADN del paciente: duplicación). <strong>Baja = falta</strong> (rojo, más ADN control: deleción). Una pérdida parcial puede indicar <strong>mosaicismo</strong>.</p>
+  </div>
+</div>
+
+<div class="caja clinica">
+  <span class="etiqueta">En la clínica — qué técnica elegir</span>
+  <p>¿Sospecha de trisomía en un feto? → <strong>cariotipo</strong> (o FISH si se necesita rapidez). ¿Cuánto virus tiene un paciente? → <strong>RT-qPCR</strong>. ¿Qué mutación concreta tiene un gen? → <strong>PCR + Sanger</strong>. ¿Muchos genes a la vez? → <strong>NGS</strong>. ¿Pequeñas ganancias o pérdidas en todo el genoma? → <strong>array CGH</strong>.</p>
+</div>
+
+<div class="caja ampliacion">
+  <span class="etiqueta">Ampliación</span>
+  <p>Para el cariotipo se cultivan células (linfocitos, líquido amniótico o vellosidades coriónicas) y se detiene la división en metafase con colchicina. En la <strong>electroforesis en gel</strong> el ADN, que tiene carga negativa, migra hacia el polo positivo y se separa por tamaño (los fragmentos pequeños avanzan más).</p>
+</div>
+
+<section class="repaso">
+  <h2>Repaso en 1 minuto</h2>
+  <ol>
+    <li>PCR: <strong>amplifica</strong> un fragmento.</li>
+    <li>95 °C separar · ≈ 55 °C cebadores · <strong>72 °C</strong> extender.</li>
+    <li>RT: <strong>ARN → ADNc</strong>.</li>
+    <li>qPCR: <strong>menos ciclos = más carga</strong>.</li>
+    <li>SARS-CoV-2 → <strong>RT-qPCR</strong>.</li>
+    <li>Sanger: 2 picos = <strong>heterocigoto</strong>.</li>
+    <li>NGS: <strong>muchos genes a la vez</strong>.</li>
+    <li>Cariotipo: <strong>número</strong> y grandes cambios.</li>
+    <li>FISH: sondas fluorescentes.</li>
+    <li>Array CGH: arriba <strong>ganancia</strong>, abajo <strong>pérdida</strong>.</li>
+  </ol>
+</section>

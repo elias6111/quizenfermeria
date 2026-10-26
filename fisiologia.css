@@ -1,0 +1,68 @@
+/* Tests de Fisiología: listado (Fisiologia.html) y página de cada test (fisiologia-test.html).
+   Reutiliza las tarjetas y las migas de apuntes.css. */
+
+/* ---------- Listado de tests ---------- */
+.bloques-tests {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tema-enlace .tema-numero {
+  font-size: 1rem;
+}
+
+.test-nota {
+  align-self: flex-start;
+  margin-top: 0.2rem;
+  padding: 0.1rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0f766e;
+  background: #e3f5f2;
+  border-radius: 999px;
+}
+
+.test-nota-vacia {
+  color: #7a3a58;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+/* El repaso de cada bloque se distingue con un fondo blanco */
+.tema-repaso {
+  background: #fff;
+}
+
+.tema-repaso .tema-numero {
+  background: var(--ciruela);
+  box-shadow: 0 3px 0 #2c0d1d;
+}
+
+/* ---------- Página de un test ---------- */
+.prueba .migas {
+  width: min(680px, 100%);
+}
+
+.test-cabecera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.test-bloque {
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--rosa-oscuro);
+}
+
+.prueba .test-cabecera h1 {
+  font-size: clamp(1.9rem, 6vw, 3rem);
+}
+
+.acciones a.boton {
+  margin-top: 0;
+}

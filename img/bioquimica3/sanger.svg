@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 220" role="img" font-family="Fredoka, Trebuchet MS, sans-serif">
+<title>Electroferograma de secuenciación Sanger; en la posición marcada con interrogante se superponen un pico de G y otro de A</title>
+<rect width="450" height="220" fill="#fff"/>
+<path d="M27,170 C38,170 38,90 45,90 C52,90 52,170 63,170" fill="none" stroke="#2563eb" stroke-width="2.5"/><text x="45" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#2563eb">C</text>
+<path d="M67,170 C78,170 78,75 85,75 C92,75 92,170 103,170" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="85" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#dc2626">T</text>
+<path d="M107,170 C118,170 118,100 125,100 C132,100 132,170 143,170" fill="none" stroke="#4a1730" stroke-width="2.5"/><text x="125" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#4a1730">G</text>
+<path d="M147,170 C158,170 158,70 165,70 C172,70 172,170 183,170" fill="none" stroke="#16a34a" stroke-width="2.5"/><text x="165" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#16a34a">A</text>
+<path d="M187,170 C198,170 198,85 205,85 C212,85 212,170 223,170" fill="none" stroke="#2563eb" stroke-width="2.5"/><text x="205" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#2563eb">C</text>
+<path d="M225,170 C236,170 236,118 243,118 C250,118 250,170 261,170" fill="none" stroke="#4a1730" stroke-width="2.5"/><path d="M229,170 C240,170 240,122 247,122 C254,122 254,170 265,170" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+<rect x="225" y="16" width="40" height="160" rx="8" fill="none" stroke="#c2255c" stroke-width="2" stroke-dasharray="5 4"/>
+<text x="245" y="36" text-anchor="middle" font-size="17" font-weight="600" fill="#c2255c">?</text>
+<path d="M267,170 C278,170 278,80 285,80 C292,80 292,170 303,170" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="285" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#dc2626">T</text>
+<path d="M307,170 C318,170 318,95 325,95 C332,95 332,170 343,170" fill="none" stroke="#dc2626" stroke-width="2.5"/><text x="325" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#dc2626">T</text>
+<path d="M347,170 C358,170 358,75 365,75 C372,75 372,170 383,170" fill="none" stroke="#4a1730" stroke-width="2.5"/><text x="365" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#4a1730">G</text>
+<path d="M387,170 C398,170 398,90 405,90 C412,90 412,170 423,170" fill="none" stroke="#2563eb" stroke-width="2.5"/><text x="405" y="36" text-anchor="middle" font-size="16" font-weight="600" fill="#2563eb">C</text>
+<line x1="20" y1="170" x2="430" y2="170" stroke="#9ca3af" stroke-width="1.5"/>
+<line x1="120" y1="200" x2="138" y2="200" stroke="#16a34a" stroke-width="3"/><text x="144" y="205" text-anchor="start" font-size="13" font-weight="600" fill="#16a34a">A</text>
+<line x1="175" y1="200" x2="193" y2="200" stroke="#dc2626" stroke-width="3"/><text x="199" y="205" text-anchor="start" font-size="13" font-weight="600" fill="#dc2626">T</text>
+<line x1="230" y1="200" x2="248" y2="200" stroke="#4a1730" stroke-width="3"/><text x="254" y="205" text-anchor="start" font-size="13" font-weight="600" fill="#4a1730">G</text>
+<line x1="285" y1="200" x2="303" y2="200" stroke="#2563eb" stroke-width="3"/><text x="309" y="205" text-anchor="start" font-size="13" font-weight="600" fill="#2563eb">C</text>
+</svg>
