@@ -7,6 +7,7 @@ const fisiologiaBloque2 = {
     /* ---------- Tema 7: propiedades de la sangre y hematíes ---------- */
     {
       id: "t07",
+      tema: "tema-07",
       numero: "7",
       titulo: "Propiedades de la sangre y hematíes",
       preguntas: [
@@ -101,6 +102,7 @@ const fisiologiaBloque2 = {
     /* ---------- Tema 8 (1): leucocitos e inmunidad ---------- */
     {
       id: "t08",
+      tema: "tema-08",
       numero: "8",
       titulo: "Leucocitos e inmunidad",
       preguntas: [
@@ -185,6 +187,7 @@ const fisiologiaBloque2 = {
     /* ---------- Tema 8 (2): grupos sanguíneos ---------- */
     {
       id: "t08b",
+      tema: "tema-08",
       numero: "8",
       titulo: "Grupos sanguíneos AB0 y Rh",
       preguntas: [
@@ -274,6 +277,7 @@ const fisiologiaBloque2 = {
     /* ---------- Tema 9: plaquetas y hemostasia ---------- */
     {
       id: "t09",
+      tema: "tema-09",
       numero: "9",
       titulo: "Plaquetas y hemostasia",
       preguntas: [
@@ -372,6 +376,7 @@ const fisiologiaBloque2 = {
       titulo: "Repaso del bloque II",
       preguntas: [
         {
+          tema: "tema-07",
           texto: "«La célula madre pluripotencial mieloide puede dar lugar a linfocitos.» ¿Verdadero o falso?",
           opciones: [
             "Verdadero",
@@ -383,18 +388,21 @@ const fisiologiaBloque2 = {
           explicacion: "Los precursores mieloide y linfoide son multipotenciales: el linfoide solo da linfocitos y el mieloide da todo lo demás."
         },
         {
+          tema: "tema-09",
           texto: "¿Qué factor estimula de forma específica la formación de plaquetas?",
           opciones: ["Eritropoyetina", "Interleucina-5", "Trombopoyetina", "Interleucina-1"],
           correcta: 2,
           explicacion: "La trombopoyetina (TPO) estimula la producción de plaquetas (también la IL-11). La EPO estimula los hematíes y la IL-5, los eosinófilos."
         },
         {
+          tema: "tema-07",
           texto: "¿Qué vitamina es necesaria para la síntesis del grupo hemo?",
           opciones: ["Vitamina B6 (piridoxina)", "Vitamina B12", "Vitamina K", "Vitamina C"],
           correcta: 0,
           explicacion: "La B6 ayuda a sintetizar el grupo hemo. El ácido fólico (B9) y la B12 son necesarios para la síntesis de ADN de los precursores."
         },
         {
+          tema: "tema-07",
           texto: "En la hemocatéresis, ¿qué ocurre con el hierro del grupo hemo?",
           opciones: [
             "Se elimina por la orina",
@@ -406,12 +414,14 @@ const fisiologiaBloque2 = {
           explicacion: "La globina se degrada a aminoácidos, el hierro se guarda como ferritina y se reutiliza, y el resto del hemo se transforma en bilirrubina, que se elimina por la bilis."
         },
         {
+          tema: "tema-08",
           texto: "¿Qué leucocito es el principal encargado de destruir parásitos?",
           opciones: ["El neutrófilo", "El eosinófilo", "El linfocito B", "El basófilo"],
           correcta: 1,
           explicacion: "Los eosinófilos destruyen la membrana de los parásitos con el contenido de sus gránulos. La IgE también participa en la defensa frente a gusanos."
         },
         {
+          tema: "tema-08",
           texto: "Una analítica muestra neutrófilos altos y macrófagos bajos. Según los apuntes, ¿qué indica?",
           opciones: [
             "Que la infección todavía está en curso",
@@ -423,6 +433,7 @@ const fisiologiaBloque2 = {
           explicacion: "Los neutrófilos llegan primero. Neutrófilos altos y macrófagos bajos → infección en curso; neutrófilos bajos y macrófagos altos → la infección está pasando."
         },
         {
+          tema: "tema-08",
           texto: "¿En qué células se expresa el MHC de clase II?",
           opciones: [
             "En todas las células nucleadas",
@@ -434,12 +445,14 @@ const fisiologiaBloque2 = {
           explicacion: "El MHC II solo está en células presentadoras (macrófagos, dendríticas, linfocitos B) y presenta antígenos externos a los CD4⁺. El MHC I está en todas las células nucleadas."
         },
         {
+          tema: "tema-08",
           texto: "¿Qué enfermedad destruye los linfocitos T CD4⁺ y deja al paciente sin capacidad de coordinar la respuesta inmune?",
           opciones: ["La anemia ferropénica", "La eritroblastosis fetal", "La hemofilia", "El sida (VIH)"],
           correcta: 3,
           explicacion: "El VIH infecta y destruye los linfocitos T CD4⁺ (cooperadores), por lo que falla toda la respuesta adaptativa y aparecen infecciones oportunistas."
         },
         {
+          tema: "tema-09",
           texto: "El endotelio sano que rodea la lesión libera óxido nítrico y prostaciclina. ¿Para qué?",
           opciones: [
             "Para acelerar la coagulación",
@@ -451,6 +464,7 @@ const fisiologiaBloque2 = {
           explicacion: "El NO y la prostaciclina (PGI₂) tienen acción antiagregante: impiden que el tapón se extienda más allá de la zona lesionada."
         },
         {
+          tema: "tema-09",
           texto: "La aspirina es antiagregante porque…",
           opciones: [
             "Activa la plasmina",

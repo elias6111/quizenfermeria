@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 215" role="img" font-family="Fredoka, Trebuchet MS, sans-serif">
+<title>Proyección de Fischer del gliceraldehído: el grupo aldehído arriba, CH₂OH abajo y, en el carbono quiral, el H a la izquierda y el OH a la derecha</title>
+<defs><marker id="f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#4a1730"/></marker>
+<marker id="fr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#c2255c"/></marker></defs>
+<rect width="420" height="215" fill="#fff"/>
+<line x1="210" y1="70" x2="210" y2="170" stroke="#4a1730" stroke-width="3" /><line x1="150" y1="120" x2="270" y2="120" stroke="#4a1730" stroke-width="3" /><text x="210" y="60" text-anchor="middle" font-size="16" font-weight="600" fill="#4a1730" >CHO</text><text x="210" y="192" text-anchor="middle" font-size="16" font-weight="600" fill="#4a1730" >CH₂OH</text><text x="132" y="126" text-anchor="middle" font-size="16" font-weight="500" fill="#4a1730" >H</text><text x="292" y="126" text-anchor="middle" font-size="16" font-weight="600" fill="#c2255c" >OH</text><circle cx="210" cy="120" r="5" fill="#4a1730"/><text x="232" y="112" text-anchor="middle" font-size="11" font-weight="500" fill="#7a6470" >C2</text>
+</svg>

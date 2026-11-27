@@ -7,6 +7,7 @@ const fisiologiaBloque5 = {
     /* ---------- Tema 20: introducción al sistema respiratorio ---------- */
     {
       id: "t20",
+      tema: "tema-20",
       numero: "20",
       titulo: "Introducción al sistema respiratorio",
       preguntas: [
@@ -106,6 +107,7 @@ const fisiologiaBloque5 = {
     /* ---------- Tema 21: volúmenes y capacidades pulmonares ---------- */
     {
       id: "t21",
+      tema: "tema-21",
       numero: "21",
       titulo: "Volúmenes y capacidades pulmonares",
       preguntas: [
@@ -195,6 +197,7 @@ const fisiologiaBloque5 = {
     /* ---------- Tema 22: mecánica y ventilación pulmonar ---------- */
     {
       id: "t22",
+      tema: "tema-22",
       numero: "22",
       titulo: "Mecánica y ventilación pulmonar",
       preguntas: [
@@ -284,6 +287,7 @@ const fisiologiaBloque5 = {
     /* ---------- Tema 23: circulación pulmonar e intercambio de gases ---------- */
     {
       id: "t23",
+      tema: "tema-23",
       numero: "23",
       titulo: "Circulación pulmonar e intercambio de gases",
       preguntas: [
@@ -388,6 +392,7 @@ const fisiologiaBloque5 = {
     /* ---------- Tema 24: transporte de gases ---------- */
     {
       id: "t24",
+      tema: "tema-24",
       numero: "24",
       titulo: "Transporte de gases",
       preguntas: [
@@ -482,6 +487,7 @@ const fisiologiaBloque5 = {
     /* ---------- Tema 25: regulación de la respiración ---------- */
     {
       id: "t25",
+      tema: "tema-25",
       numero: "25",
       titulo: "Regulación de la respiración",
       preguntas: [
@@ -595,6 +601,7 @@ const fisiologiaBloque5 = {
       titulo: "Repaso del bloque V",
       preguntas: [
         {
+          tema: "tema-21",
           texto: "¿Qué es la capacidad pulmonar total?",
           opciones: [
             "La suma de todos los volúmenes (capacidad vital + volumen residual), ≈ 6 L",
@@ -606,6 +613,7 @@ const fisiologiaBloque5 = {
           explicacion: "CPT = VC + VRI + VRE + VR = CV + VR ≈ 6 L. No se puede medir con espirometría porque incluye el volumen residual."
         },
         {
+          tema: "tema-22",
           texto: "¿Por qué respirar de forma rápida y superficial es poco eficaz?",
           opciones: [
             "Porque aumenta el surfactante",
@@ -617,12 +625,14 @@ const fisiologiaBloque5 = {
           explicacion: "Con volúmenes corrientes pequeños, una gran parte de cada respiración se queda en el espacio muerto y la ventilación alveolar cae."
         },
         {
+          tema: "tema-23",
           texto: "¿Cuál es la PO₂ alveolar normal a nivel del mar?",
           opciones: ["≈ 160 mmHg", "≈ 150 mmHg", "≈ 100 mmHg", "≈ 40 mmHg"],
           correcta: 2,
           explicacion: "Atmósfera ≈ 160, tráquea ≈ 150, alvéolo ≈ 100 mmHg (y PCO₂ alveolar ≈ 40). La sangre arterial se iguala con el alvéolo."
         },
         {
+          tema: "tema-23",
           texto: "En la altitud, ¿qué ocurre con la FiO₂ (fracción inspirada de O₂)?",
           opciones: [
             "Baja al 10 %",
@@ -634,6 +644,7 @@ const fisiologiaBloque5 = {
           explicacion: "El aire siempre tiene un 21 % de O₂. Lo que baja con la altura es la presión atmosférica y, con ella, la presión parcial de O₂."
         },
         {
+          tema: "tema-22",
           texto: "Un paciente con asma recibe salbutamol. ¿Cómo actúa?",
           opciones: [
             "Es un agonista β₂ que produce broncodilatación",
@@ -645,12 +656,14 @@ const fisiologiaBloque5 = {
           explicacion: "El salbutamol activa los receptores β₂ del músculo liso bronquial y lo relaja: broncodilatación. La histamina y la acetilcolina producen broncoconstricción."
         },
         {
+          tema: "tema-20",
           texto: "¿Qué células del alvéolo son la principal superficie de difusión de los gases?",
           opciones: ["Los neumocitos tipo II", "Los macrófagos alveolares", "Los neumocitos tipo I", "Las células de Clara"],
           correcta: 2,
           explicacion: "Los neumocitos tipo I son planos y muy finos, están fusionados con el capilar y forman la mayor parte de la superficie alveolar: ahí difunden los gases."
         },
         {
+          tema: "tema-24",
           texto: "Durante el ejercicio intenso, el músculo recibe más O₂ porque…",
           opciones: [
             "La Hb aumenta su afinidad por el O₂",
@@ -662,12 +675,14 @@ const fisiologiaBloque5 = {
           explicacion: "En el músculo activo la PO₂ cae (≈ 30 mmHg) en la zona empinada de la curva, y el CO₂, los H⁺ y el calor bajan la afinidad: la Hb suelta mucho más O₂."
         },
         {
+          tema: "tema-25",
           texto: "¿Qué nervio lleva la información de los cuerpos carotídeos al tronco del encéfalo?",
           opciones: ["El vago", "El frénico", "El facial", "El glosofaríngeo"],
           correcta: 3,
           explicacion: "Los cuerpos carotídeos envían su información por el glosofaríngeo (IX) y los aórticos, por el vago (X)."
         },
         {
+          tema: "tema-25",
           texto: "Un paciente con una crisis de ansiedad hiperventila. ¿Qué le ocurre?",
           opciones: [
             "Retiene CO₂ y entra en acidosis",
@@ -679,6 +694,7 @@ const fisiologiaBloque5 = {
           explicacion: "La hiperventilación sube la PO₂ alveolar y baja la PCO₂: al perder CO₂ (ácido) el pH sube. Puede notar hormigueos por la alcalosis."
         },
         {
+          tema: "tema-25",
           texto: "¿Qué produce la irritación de las fosas nasales?",
           opciones: ["Tos", "Estornudo", "Bostezo", "Hipo"],
           correcta: 1,

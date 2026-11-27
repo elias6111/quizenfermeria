@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test a medida · Quiz de enfermería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="apuntes.css">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <main class="apuntes">
+    <nav class="migas" aria-label="Ruta">
+      <a href="index.html">Inicio</a>
+      <span class="migas-separador" aria-hidden="true">›</span>
+      <a href="asignaturas.html">Asignaturas</a>
+      <span class="migas-separador" aria-hidden="true">›</span>
+      <span aria-current="page">Test a medida</span>
+    </nav>
+
+    <div class="vista">
+      <h1>Test a medida</h1>
+      <p class="subtitulo">Elige la asignatura, los temas y cuántas preguntas quieres</p>
+
+      <form id="medida" class="medida-formulario">
+        <fieldset class="medida-paso">
+          <legend>1 · Asignatura</legend>
+          <div id="asignaturas" class="pastillas"></div>
+        </fieldset>
+
+        <fieldset class="medida-paso">
+          <legend>2 · Temas</legend>
+          <div class="medida-atajos">
+            <button type="button" class="enlace-boton" id="todos">Marcar todos</button>
+            <button type="button" class="enlace-boton" id="ninguno">Quitar todos</button>
+          </div>
+          <div id="temas"></div>
+        </fieldset>
+
+        <fieldset class="medida-paso">
+          <legend>3 · Número de preguntas</legend>
+          <div id="cantidades" class="pastillas"></div>
+        </fieldset>
+
+        <p id="medida-resumen" class="medida-resumen" aria-live="polite"></p>
+        <button type="submit" id="empezar" class="boton">Empezar</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="apuntes-datos.js"></script>
+  <script src="bioquimica4-6.js"></script>
+  <script src="bioquimica2.js"></script>
+  <script src="bioquimica3.js"></script>
+  <script src="fisiologia-bloque1.js"></script>
+  <script src="fisiologia-bloque2.js"></script>
+  <script src="fisiologia-bloque3.js"></script>
+  <script src="fisiologia-bloque4.js"></script>
+  <script src="fisiologia-bloque5.js"></script>
+  <script src="fisio2-tema07.js"></script>
+  <script src="fisio2-tema08-estructura.js"></script>
+  <script src="fisio2-tema08-metabolismo.js"></script>
+  <script src="fisio2-tema09.js"></script>
+  <script src="fisio2-tema10.js"></script>
+  <script src="fisio2-tema11.js"></script>
+  <script src="fisio2-tema12-nucleotidos.js"></script>
+  <script src="fisio2-tema12-hemoglobina.js"></script>
+  <script src="fisio2-examen.js"></script>
+  <script src="colecciones.js"></script>
+  <script src="quiz-datos.js"></script>
+  <script src="a-medida.js"></script>
+</body>
+</html>

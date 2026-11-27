@@ -7,6 +7,7 @@ const fisiologiaBloque3 = {
     /* ---------- Tema 10: introducción al sistema cardiovascular ---------- */
     {
       id: "t10",
+      tema: "tema-10",
       numero: "10",
       titulo: "Introducción al sistema cardiovascular",
       preguntas: [
@@ -106,6 +107,7 @@ const fisiologiaBloque3 = {
     /* ---------- Tema 11: actividad eléctrica cardíaca ---------- */
     {
       id: "t11",
+      tema: "tema-11",
       numero: "11",
       titulo: "Actividad eléctrica cardíaca",
       preguntas: [
@@ -210,6 +212,7 @@ const fisiologiaBloque3 = {
     /* ---------- Tema 12: ciclo cardíaco ---------- */
     {
       id: "t12",
+      tema: "tema-12",
       numero: "12",
       titulo: "Ciclo cardíaco",
       preguntas: [
@@ -314,6 +317,7 @@ const fisiologiaBloque3 = {
     /* ---------- Tema 13: sistema arterial ---------- */
     {
       id: "t13",
+      tema: "tema-13",
       numero: "13",
       titulo: "Sistema arterial",
       preguntas: [
@@ -403,6 +407,7 @@ const fisiologiaBloque3 = {
     /* ---------- Tema 14: circulación venosa ---------- */
     {
       id: "t14",
+      tema: "tema-14",
       numero: "14",
       titulo: "Circulación venosa",
       preguntas: [
@@ -517,6 +522,7 @@ const fisiologiaBloque3 = {
     /* ---------- Tema 15: capilares y sistema linfático ---------- */
     {
       id: "t15",
+      tema: "tema-15",
       numero: "15",
       titulo: "Capilares y sistema linfático",
       preguntas: [
@@ -630,6 +636,7 @@ const fisiologiaBloque3 = {
       titulo: "Repaso del bloque III",
       preguntas: [
         {
+          tema: "tema-10",
           texto: "¿Por qué la pared del ventrículo izquierdo es más gruesa que la del derecho?",
           opciones: [
             "Porque recibe más sangre",
@@ -641,12 +648,14 @@ const fisiologiaBloque3 = {
           explicacion: "El VI impulsa la sangre a todo el cuerpo con alta presión; el VD solo la envía a los pulmones, un circuito de baja presión y resistencia."
         },
         {
+          tema: "tema-11",
           texto: "¿Qué propiedad cardiaca se refiere a la fuerza de contracción?",
           opciones: ["Cronotropismo", "Dromotropismo", "Batmotropismo", "Inotropismo"],
           correcta: 3,
           explicacion: "Inotropismo = fuerza; cronotropismo = frecuencia; dromotropismo = velocidad de conducción; batmotropismo = excitabilidad."
         },
         {
+          tema: "tema-11",
           texto: "En el ECG, ¿por qué no se ve la repolarización auricular?",
           opciones: [
             "Porque queda oculta dentro del complejo QRS",
@@ -658,6 +667,7 @@ const fisiologiaBloque3 = {
           explicacion: "La repolarización auricular ocurre a la vez que la despolarización ventricular; como el ventrículo tiene mucha más masa, queda enmascarada por el QRS."
         },
         {
+          tema: "tema-12",
           texto: "¿Qué ocurre en la fase de relajación isovolumétrica?",
           opciones: [
             "Se abren las válvulas AV y entra sangre",
@@ -669,12 +679,14 @@ const fisiologiaBloque3 = {
           explicacion: "Tras cerrarse las semilunares (2.º ruido), el ventrículo se relaja con todas las válvulas cerradas: baja la presión y el volumen no cambia, hasta que se abren las AV."
         },
         {
+          tema: "tema-13",
           texto: "En una arteria, el radio se reduce a la mitad. ¿Qué le pasa a la resistencia?",
           opciones: ["Se duplica", "Se multiplica por 4", "Se reduce a la mitad", "Se multiplica por 16"],
           correcta: 3,
           explicacion: "La resistencia es inversamente proporcional al radio elevado a la cuarta potencia: (1/2)⁴ = 1/16, así que la resistencia se multiplica por 16."
         },
         {
+          tema: "tema-13",
           texto: "Al tomar la tensión con fonendo, ¿qué marca la presión sistólica?",
           opciones: [
             "La desaparición de los ruidos",
@@ -686,6 +698,7 @@ const fisiologiaBloque3 = {
           explicacion: "La sistólica corresponde al primer ruido de Korotkoff, cuando la sangre vuelve a pasar por la arteria al desinflar el manguito. El método palpatorio solo da la sistólica."
         },
         {
+          tema: "tema-14",
           texto: "¿Por qué caminar mejora el retorno venoso?",
           opciones: [
             "Porque activa la bomba muscular de las piernas",
@@ -697,12 +710,14 @@ const fisiologiaBloque3 = {
           explicacion: "Al contraerse, los músculos de la pierna exprimen las venas y, gracias a las válvulas, empujan la sangre hacia el corazón."
         },
         {
+          tema: "tema-11",
           texto: "¿Por dónde pasa el impulso justo después del nodo auriculoventricular?",
           opciones: ["Por el nodo sinusal", "Por las vías internodales", "Por el haz de His", "Por las fibras de Purkinje"],
           correcta: 2,
           explicacion: "Orden: nodo SA → aurículas y vías internodales → nodo AV → haz de His (por el tabique) → fibras de Purkinje → ventrículos."
         },
         {
+          tema: "tema-15",
           texto: "¿Por qué la circulación en los capilares es tan lenta?",
           opciones: [
             "Porque los capilares tienen válvulas",
@@ -714,6 +729,7 @@ const fisiologiaBloque3 = {
           explicacion: "Aunque cada capilar es diminuto, juntos suman un área de sección enorme; la velocidad disminuye y hay tiempo para el intercambio con los tejidos."
         },
         {
+          tema: "tema-15",
           texto: "Tras extirpar los ganglios axilares, una paciente presenta hinchazón en ese brazo. ¿Cómo se llama?",
           opciones: ["Varices", "Linfedema", "Trombosis arterial", "Hemólisis"],
           correcta: 1,

@@ -1,7 +1,12 @@
 // Preguntas del cuestionario Bioquimica 3, agrupadas en partes por dificultad.
+// "tema" es el archivo del tema en los apuntes (apuntes-datos.js); sirve para los fallos y el test a medida.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción).
 // "imagen" es opcional: { src, alt } con un esquema que acompaña a la pregunta.
-const partes = [
+const bancoBioquimica3 = {
+  id: "bioquimica3",
+  asignatura: "bioquimica",
+  titulo: "Bioquimica 3",
+  partes: [
   /* ==========================================================================
      PARTE 1: FÁCIL
      ========================================================================== */
@@ -10,6 +15,7 @@ const partes = [
     preguntas: [
       /* ---------- Tema 12: nucleósidos, nucleótidos y metabolismo ---------- */
       {
+        tema: "tema-12",
         texto: "¿Qué componentes forman un nucleósido?",
         opciones: [
           "Base nitrogenada + pentosa + ácido fosfórico",
@@ -21,18 +27,21 @@ const partes = [
         explicacion: "Nucleósido = base nitrogenada + azúcar (ribosa o 2-desoxirribosa). Cuando además se esterifica con ácido fosfórico se obtiene el nucleótido."
       },
       {
+        tema: "tema-12",
         texto: "¿Cuáles son las bases nitrogenadas púricas que forman los ácidos nucleicos?",
         opciones: ["Citosina y timina", "Uracilo y citosina", "Adenina y guanina", "Timina y uracilo"],
         correcta: 2,
         explicacion: "Las bases púricas (A y G) derivan de la purina, un doble anillo. Las pirimidínicas (C, T y U) derivan de la pirimidina, un único anillo. Truco: «AG» púricas, «TC» (y U) pirimidínicas."
       },
       {
+        tema: "tema-12",
         texto: "¿Qué base nitrogenada aparece en el ARN pero no en el ADN?",
         opciones: ["Timina", "Adenina", "Citosina", "Uracilo"],
         correcta: 3,
         explicacion: "El ARN lleva uracilo en lugar de timina. La adenina, la guanina y la citosina están en ambos ácidos nucleicos; la timina es exclusiva del ADN."
       },
       {
+        tema: "tema-12",
         texto: "¿Cuál es el producto final del catabolismo de las purinas en el ser humano, que se excreta?",
         opciones: ["Ácido úrico", "Urea", "β-alanina", "Amoniaco libre"],
         correcta: 0,
@@ -41,6 +50,7 @@ const partes = [
 
       /* ---------- Tema 13: ácidos nucleicos ---------- */
       {
+        tema: "tema-13",
         texto: "Según el modelo de Watson y Crick, ¿cómo es la doble hélice del ADN?",
         opciones: [
           "Levógira, con cadenas paralelas",
@@ -52,18 +62,21 @@ const partes = [
         explicacion: "La doble hélice es dextrógira, con dos cadenas antiparalelas (una 5'→3' y otra 3'→5') y complementarias. Las bases quedan en el interior y el esqueleto de fosfato y desoxirribosa, en el exterior."
       },
       {
+        tema: "tema-13",
         texto: "¿Cuántos puentes de hidrógeno se forman entre la guanina y la citosina?",
         opciones: ["1", "2", "3", "4"],
         correcta: 2,
         explicacion: "G≡C forma 3 puentes de hidrógeno y A=T forma 2. Por eso las zonas ricas en A-T son más débiles y más fáciles de separar."
       },
       {
+        tema: "tema-13",
         texto: "¿Qué tipo de ARN transporta los aminoácidos hasta los ribosomas?",
         opciones: ["ARN de transferencia (ARNt)", "ARN mensajero (ARNm)", "ARN ribosómico (ARNr)", "ARN nuclear pequeño (snRNA)"],
         correcta: 0,
         explicacion: "El ARNt transporta los aminoácidos al ribosoma; hay tipos específicos para cada aminoácido. El ARNm lleva la información del ADN y el ARNr es el principal componente de los ribosomas."
       },
       {
+        tema: "tema-13",
         texto: "¿Qué proteínas básicas forman la cromatina junto con el ADN?",
         opciones: ["Albúminas", "Queratinas", "Inmunoglobulinas", "Histonas"],
         correcta: 3,
@@ -72,18 +85,21 @@ const partes = [
 
       /* ---------- Tema 14: biosíntesis de proteínas ---------- */
       {
+        tema: "tema-14",
         texto: "¿Cuál es el codón de inicio de la traducción y qué aminoácido codifica?",
         opciones: ["UAA, triptófano", "UGA, metionina", "AUG, glicina", "AUG, metionina"],
         correcta: 3,
         explicacion: "La traducción empieza en el codón AUG, que codifica la metionina, el aminoácido iniciador. Normalmente se elimina después por una aminopeptidasa durante la maduración de la proteína."
       },
       {
+        tema: "tema-14",
         texto: "¿Cómo se llama el proceso por el que a partir del ADN se obtiene una copia de ARN?",
         opciones: ["Replicación", "Traducción", "Transcripción", "Proteólisis"],
         correcta: 2,
         explicacion: "Replicación: ADN → ADN. Transcripción: ADN → ARN. Traducción: ARN → proteína. Los tres procesos forman el dogma central de la biología molecular."
       },
       {
+        tema: "tema-14",
         texto: "¿Cuáles son los codones de terminación (STOP)?",
         opciones: ["AUG, GUG y UUG", "GAA, GAG y GAC", "UAA, UAG y UGA", "UUU, UUC y UUA"],
         correcta: 2,
@@ -92,6 +108,7 @@ const partes = [
 
       /* ---------- Tema 15: introducción a la genética médica ---------- */
       {
+        tema: "tema-15",
         texto: "¿Cuántos cromosomas tiene una célula somática humana?",
         opciones: [
           "46: 22 pares de autosomas y 1 par de cromosomas sexuales",
@@ -103,18 +120,21 @@ const partes = [
         explicacion: "Tenemos 46 cromosomas (23 pares): los autosomas, del par 1 al 22, y los sexuales, X e Y. Los gametos son haploides y tienen 23."
       },
       {
+        tema: "tema-15",
         texto: "¿De quién se hereda el ADN mitocondrial?",
         opciones: ["Solo del padre", "De ambos progenitores por igual", "Solo de la madre", "Del progenitor del mismo sexo"],
         correcta: 2,
         explicacion: "El ADN mitocondrial (circular) se hereda solo de la madre: el espermatozoide lleva sus mitocondrias en la cola, que queda fuera del óvulo en la fecundación."
       },
       {
+        tema: "tema-15",
         texto: "Una variante del ADN presente en más del 1% de la población se denomina:",
         opciones: ["Mutación", "Polimorfismo", "Aneuploidía", "Translocación"],
         correcta: 1,
         explicacion: "Polimorfismo: más del 1% de la población (los más frecuentes son los SNP). Mutación: menos del 1%. El término «mutación» se refiere solo a la frecuencia; no implica que sea perjudicial."
       },
       {
+        tema: "tema-15",
         texto: "¿Cuál de los cromosomas del esquema es acrocéntrico?",
         imagen: {
           src: "img/bioquimica3/tipos-cromosomas.svg",
@@ -127,6 +147,7 @@ const partes = [
 
       /* ---------- Tema 16: mutaciones y modelos de herencia ---------- */
       {
+        tema: "tema-16",
         texto: "¿Qué es un individuo homocigoto para un gen?",
         opciones: [
           "El que tiene dos alelos iguales para ese gen",
@@ -138,12 +159,14 @@ const partes = [
         explicacion: "Homocigoto: dos alelos iguales. Heterocigoto: dos alelos distintos. Los varones son hemicigotos para los genes del cromosoma X porque solo tienen una copia."
       },
       {
+        tema: "tema-16",
         texto: "¿Qué alteración cromosómica causa el síndrome de Down?",
         opciones: ["Trisomía 13", "Trisomía 18", "Monosomía del X", "Trisomía 21"],
         correcta: 3,
         explicacion: "Trisomía 21: síndrome de Down. Trisomía 13: Patau. Trisomía 18: Edwards. Monosomía X (X0): Turner."
       },
       {
+        tema: "tema-16",
         texto: "¿Cuál de estas enfermedades se hereda de forma recesiva ligada al cromosoma X?",
         opciones: ["Acondroplasia", "Hemofilia", "Fibrosis quística", "Síndrome de Rett"],
         correcta: 1,
@@ -152,6 +175,7 @@ const partes = [
 
       /* ---------- Tema 17: técnicas genéticas de laboratorio ---------- */
       {
+        tema: "tema-17",
         texto: "¿Para qué sirve principalmente la PCR (reacción en cadena de la polimerasa)?",
         opciones: [
           "Para ordenar los cromosomas según su tamaño",
@@ -163,6 +187,7 @@ const partes = [
         explicacion: "La PCR amplifica un fragmento de ADN delimitado por los cebadores, obteniendo millones de copias (hasta unos 40 ciclos) para después secuenciarlo o detectar mutaciones o patógenos."
       },
       {
+        tema: "tema-17",
         texto: "¿Qué técnica ordena los cromosomas según su tamaño y morfología para detectar alteraciones en su número o grandes cambios estructurales?",
         opciones: ["PCR cuantitativa", "Secuenciación de Sanger", "Cariotipo", "Secuenciación de alto rendimiento (NGS)"],
         correcta: 2,
@@ -171,6 +196,7 @@ const partes = [
 
       /* ---------- Temas 18 y 19: inmunogenética ---------- */
       {
+        tema: "tema-18-19",
         texto: "¿Qué rama de la inmunidad adaptativa controla las infecciones intracelulares y qué células la movilizan?",
         opciones: [
           "Humoral, mediante linfocitos B",
@@ -182,6 +208,7 @@ const partes = [
         explicacion: "El sistema celular (linfocitos T) controla las infecciones intracelulares, como virus y parásitos. El humoral (linfocitos B) controla las extracelulares, como bacterias y virus circulantes."
       },
       {
+        tema: "tema-18-19",
         texto: "¿Qué inmunoglobulina predomina en las mucosas, la saliva, las lágrimas y la leche materna?",
         opciones: ["IgD", "IgG", "IgA", "IgE"],
         correcta: 2,
@@ -198,6 +225,7 @@ const partes = [
     preguntas: [
       /* ---------- Tema 12: nucleósidos, nucleótidos y metabolismo ---------- */
       {
+        tema: "tema-12",
         texto: "En el esquema del nucleótido, ¿qué enlace (?) une la base púrica (3) al carbono 1' de la pentosa (2), y a través de qué átomo de la base?",
         imagen: {
           src: "img/bioquimica3/nucleotido.svg",
@@ -213,6 +241,7 @@ const partes = [
         explicacion: "La base se une al C1' del azúcar por un enlace β-N-glucosídico, liberando agua. Las bases púricas lo hacen por el N9 y las pirimidínicas por el N1. El fosfato (1) se une al C5' por un enlace fosfoéster."
       },
       {
+        tema: "tema-12",
         texto: "¿Qué ventaja tiene la vía de recuperación (salvamento) de nucleótidos frente a la vía de novo?",
         opciones: [
           "Es más rápida y de bajo coste energético, porque recicla bases ya existentes",
@@ -224,6 +253,7 @@ const partes = [
         explicacion: "La vía de recuperación recicla bases y nucleósidos (se recupera el 90% de las purinas libres): es rápida y barata. La de novo da autonomía, pero es más lenta, más costosa y se produce en el hígado."
       },
       {
+        tema: "tema-12",
         texto: "¿Qué molécula es el precursor común de la vía de recuperación y de la vía de novo de las purinas?",
         opciones: [
           "Carbamoil-fosfato",
@@ -235,6 +265,7 @@ const partes = [
         explicacion: "El PRPP es ribosa-5-fosfato activada con un pirofosfato en el C1' (aportado por el ATP) gracias a la PRPP sintetasa. En la síntesis de pirimidinas también interviene, pero a mitad de la ruta y no como precursor."
       },
       {
+        tema: "tema-12",
         texto: "¿Qué enzima de la vía de recuperación convierte la hipoxantina en IMP y la guanina en GMP?",
         opciones: ["APRT", "HGPRT", "Ribonucleótido reductasa", "Timidilato sintasa"],
         correcta: 1,
@@ -243,6 +274,7 @@ const partes = [
 
       /* ---------- Tema 13: ácidos nucleicos ---------- */
       {
+        tema: "tema-13",
         texto: "¿Qué ocurre con la absorción de luz ultravioleta (260 nm) cuando el ADN se desnaturaliza?",
         opciones: [
           "Disminuye, porque las bases quedan protegidas en el interior",
@@ -254,6 +286,7 @@ const partes = [
         explicacion: "Las bases aromáticas absorben luz UV. En la doble hélice están protegidas en el interior y absorben menos; al separarse las cadenas quedan expuestas y el pico sube. Así se detecta si el ADN se ha desnaturalizado."
       },
       {
+        tema: "tema-13",
         texto: "¿Qué caracteriza a la forma Z del ADN?",
         opciones: [
           "Es una hélice levógira",
@@ -265,6 +298,7 @@ const partes = [
         explicacion: "Entre las formas A y B las diferencias son mínimas (ambas dextrógiras). La forma Z se distingue porque su hélice es levógira: gira hacia la izquierda."
       },
       {
+        tema: "tema-13",
         texto: "¿Cómo está formado el octámero de histonas del nucleosoma?",
         opciones: [
           "4 H1 y 4 H5",
@@ -276,6 +310,7 @@ const partes = [
         explicacion: "El octámero tiene dos copias de H2A, H2B, H3 y H4, y el ADN da 1 vuelta y ¾ a su alrededor. La H1 queda fuera, cohesiona el nucleosoma con el ADN enlazante y estabiliza el solenoide."
       },
       {
+        tema: "tema-13",
         texto: "¿Qué brazo del ARNt señala la letra A y qué función tiene?",
         imagen: {
           src: "img/bioquimica3/arnt.svg",
@@ -293,6 +328,7 @@ const partes = [
 
       /* ---------- Tema 14: biosíntesis de proteínas ---------- */
       {
+        tema: "tema-14",
         texto: "¿Por qué se dice que la replicación del ADN es semiconservativa?",
         opciones: [
           "Porque cada molécula hija tiene una cadena original y una cadena nueva",
@@ -304,6 +340,7 @@ const partes = [
         explicacion: "En el modelo semiconservativo cada ADN hijo conserva una cadena molde original y otra recién sintetizada. El modelo conservativo y el dispersivo (opciones 2 y 3) se descartaron."
       },
       {
+        tema: "tema-14",
         texto: "¿Cómo se llaman los fragmentos señalados con X y qué enzima los une al final de la replicación?",
         imagen: {
           src: "img/bioquimica3/horquilla.svg",
@@ -319,6 +356,7 @@ const partes = [
         explicacion: "La ADN polimerasa solo sintetiza en sentido 5'→3', así que la hebra retardada se copia de forma discontinua en fragmentos de Okazaki, cada uno con su ARN cebador. La ADN polimerasa I cambia el cebador por ADN y la ligasa une los fragmentos."
       },
       {
+        tema: "tema-14",
         texto: "¿Qué modificaciones sufre el pre-ARNm eucariota en sus extremos durante la maduración?",
         opciones: [
           "Se le añade una metionina en 5' y una lisina en 3'",
@@ -330,6 +368,7 @@ const partes = [
         explicacion: "El extremo 5' recibe la caperuza CAP (m7G) y el 3' la cola de poliadeninas. Así el ARNm queda protegido de las enzimas en el citoplasma. Además, el splicing elimina los intrones y une los exones."
       },
       {
+        tema: "tema-14",
         texto: "¿Cómo se degradan las proteínas intracelulares en el citoplasma?",
         opciones: [
           "Por enzimas lisosomales sin necesidad de marcaje",
@@ -343,6 +382,7 @@ const partes = [
 
       /* ---------- Tema 15: introducción a la genética médica ---------- */
       {
+        tema: "tema-15",
         texto: "Un cambio de base convierte el codón TCG en TAG. ¿Qué tipo de mutación es?",
         opciones: [
           "Silenciosa",
@@ -354,6 +394,7 @@ const partes = [
         explicacion: "TAG es un codón de parada (UAG en el ARNm), así que es una mutación sin sentido: la lectura se detiene. Si ocurre al principio del gen, la proteína prácticamente no se forma."
       },
       {
+        tema: "tema-15",
         texto: "¿Qué es la heteroplasmia?",
         opciones: [
           "Que todas las mitocondrias de una persona tengan el mismo ADNmt",
@@ -365,6 +406,7 @@ const partes = [
         explicacion: "Heteroplasmia: mezcla de mitocondrias con y sin mutación (un tipo de mosaicismo). Homoplasmia: todas las mitocondrias tienen el mismo ADNmt."
       },
       {
+        tema: "tema-15",
         texto: "¿Qué efecto tiene la metilación de la citosina de un gen?",
         opciones: [
           "Activa permanentemente el gen",
@@ -378,6 +420,7 @@ const partes = [
 
       /* ---------- Tema 16: mutaciones y modelos de herencia ---------- */
       {
+        tema: "tema-16",
         texto: "¿Qué modelo de herencia es compatible con este árbol genealógico?",
         imagen: {
           src: "img/bioquimica3/arbol-genealogico.svg",
@@ -393,6 +436,7 @@ const partes = [
         explicacion: "Unos padres sanos con una hija afectada indican herencia recesiva, y los dos progenitores son portadores heterocigotos. No puede ser recesiva ligada al X: el padre tendría que estar afectado para que lo esté su hija."
       },
       {
+        tema: "tema-16",
         texto: "De 80 personas con una mutación patológica, 60 presentan síntomas. ¿Cuál es la penetrancia?",
         opciones: [
           "75%: penetrancia incompleta",
@@ -404,6 +448,7 @@ const partes = [
         explicacion: "Penetrancia = (portadores con clínica / portadores de la mutación) × 100 = 60/80 × 100 = 75%. Al ser menor del 100%, es incompleta. No hay que confundirla con la expresividad, que es la gravedad de los síntomas."
       },
       {
+        tema: "tema-16",
         texto: "La hemocromatosis hereditaria es autosómica recesiva, pero es unas 4 veces más frecuente en hombres. ¿Por qué?",
         opciones: [
           "Porque el gen está en el cromosoma Y",
@@ -417,6 +462,7 @@ const partes = [
 
       /* ---------- Tema 17: técnicas genéticas de laboratorio ---------- */
       {
+        tema: "tema-17",
         texto: "En esta PCR en tiempo real, ¿qué paciente tiene mayor carga viral?",
         imagen: {
           src: "img/bioquimica3/pcr-tiempo-real.svg",
@@ -427,6 +473,7 @@ const partes = [
         explicacion: "Cuanto más virus hay, menos ciclos hacen falta para que la fluorescencia supere el umbral. B lo cruza primero (ciclo 8), así que tiene más carga viral que A y C, aunque los tres son positivos. D es negativo."
       },
       {
+        tema: "tema-17",
         texto: "El SARS-CoV-2 es un virus de ARN y queremos saber cuánto virus hay. ¿Qué tipo de PCR se usa?",
         opciones: [
           "PCR convencional sobre ADN",
@@ -440,6 +487,7 @@ const partes = [
 
       /* ---------- Temas 18 y 19: inmunogenética ---------- */
       {
+        tema: "tema-18-19",
         texto: "¿Dónde se localizan los genes del complejo mayor de histocompatibilidad (MHC/HLA)?",
         opciones: [
           "En el brazo largo del cromosoma 21",
@@ -451,6 +499,7 @@ const partes = [
         explicacion: "El MHC se codifica por más de 200 genes en 6p, organizados en las regiones de clase I, II y III. Cualquier alteración en esta zona puede producir defectos de la inmunidad."
       },
       {
+        tema: "tema-18-19",
         texto: "¿En qué células se encuentran las moléculas del MHC de clase I?",
         opciones: [
           "Solo en las células presentadoras de antígeno",
@@ -472,6 +521,7 @@ const partes = [
     preguntas: [
       /* ---------- Tema 12: nucleósidos, nucleótidos y metabolismo ---------- */
       {
+        tema: "tema-12",
         texto: "En la síntesis de novo de purinas, a partir del IMP, ¿qué se necesita para formar AMP y GMP?",
         opciones: [
           "AMP: aspartato y GTP (vía adenilsuccinato); GMP: NAD⁺ y ATP (vía XMP)",
@@ -483,6 +533,7 @@ const partes = [
         explicacion: "IMP → adenilsuccinato (con aspartato y GTP, enzima adenilsuccinato sintetasa) → AMP + fumarato. IMP → XMP (IMP deshidrogenasa, con NAD⁺) → GMP (con ATP). Por eso el exceso de AMP genera ATP para la rama del GMP y viceversa."
       },
       {
+        tema: "tema-12",
         texto: "¿Cuál es el precursor de la síntesis de novo de pirimidinas y qué enzima lo forma?",
         opciones: [
           "PRPP, formado por la PRPP sintetasa",
@@ -494,6 +545,7 @@ const partes = [
         explicacion: "El carbamoil-fosfato se forma a partir de CO₂, glutamina y fosfato mediante la CPS II, que está en el citosol. La CPS I es mitocondrial e interviene en el ciclo de la urea."
       },
       {
+        tema: "tema-12",
         texto: "En la regulación de la síntesis de nucleótidos de pirimidina, ¿qué efecto tiene un exceso de CTP?",
         opciones: [
           "Estimula la carbamoil-fosfato sintetasa II",
@@ -505,6 +557,7 @@ const partes = [
         explicacion: "El exceso de CTP inhibe la aspartato carbamoil transferasa (primer paso clave), el de UTP inhibe la CPS II (formación del precursor) y el exceso de PRPP estimula la ruta."
       },
       {
+        tema: "tema-12",
         texto: "¿Cómo se obtiene el dTMP necesario para el ADN?",
         opciones: [
           "Por una ruta específica de novo exclusiva de los desoxinucleótidos",
@@ -518,12 +571,14 @@ const partes = [
 
       /* ---------- Tema 13: ácidos nucleicos ---------- */
       {
+        tema: "tema-13",
         texto: "Un ADN bicatenario tiene un 30% de adenina. ¿Qué porcentaje de guanina tendrá?",
         opciones: ["30%", "70%", "20%", "40%"],
         correcta: 2,
         explicacion: "Según Chargaff, A = T y G = C. Si A = 30%, T = 30%, así que G + C = 40% y G = 20%."
       },
       {
+        tema: "tema-13",
         texto: "¿Qué afirmación sobre la histona H1 es correcta?",
         opciones: [
           "Forma parte del octámero central del nucleosoma",
@@ -537,6 +592,7 @@ const partes = [
 
       /* ---------- Tema 14: biosíntesis de proteínas ---------- */
       {
+        tema: "tema-14",
         texto: "En la iniciación de la replicación en E. coli, ¿por qué la proteína DnaA consigue abrir el ADN en el origen OriC?",
         opciones: [
           "Porque OriC es rico en pares A-T, que tienen solo 2 puentes de hidrógeno",
@@ -548,6 +604,7 @@ const partes = [
         explicacion: "La DnaA, gastando ATP, reconoce OriC y se acumula provocando una distorsión. La zona es rica en A-T (2 puentes de H), más débil y fácil de separar. Después la helicasa DnaB sigue desenrollando y las SSB estabilizan las cadenas sueltas."
       },
       {
+        tema: "tema-14",
         texto: "¿Qué función tiene el factor σ (sigma) de la ARN polimerasa de E. coli?",
         opciones: [
           "Sintetizar el ARN cebador",
@@ -559,6 +616,7 @@ const partes = [
         explicacion: "El núcleo de la polimerasa (α₂ββ'ω) necesita el factor σ para reconocer el promotor (secuencia consenso TTGACA… TATAAT). Cuanto más se parezca el promotor a esa secuencia, más fuerte es."
       },
       {
+        tema: "tema-14",
         texto: "Si la ARN polimerasa incorpora un nucleótido erróneo durante la transcripción, ¿qué ocurre?",
         opciones: [
           "La ADN polimerasa I lo corrige",
@@ -572,12 +630,14 @@ const partes = [
 
       /* ---------- Tema 15: introducción a la genética médica ---------- */
       {
+        tema: "tema-15",
         texto: "¿Cuántos cromosomas tiene el portador equilibrado de una translocación robertsoniana 14;21?",
         opciones: ["47", "46", "45", "44"],
         correcta: 2,
         explicacion: "Dos cromosomas acrocéntricos (13, 14, 15, 21 o 22) pierden sus brazos cortos y se fusionan, así que el cariotipo tiene 45 cromosomas. El portador es sano, pero su descendencia puede tener monosomías o trisomías, como el síndrome de Down."
       },
       {
+        tema: "tema-15",
         texto: "Se produce una deleción de 3 nucleótidos consecutivos dentro de un exón. ¿Cuál es el efecto más probable?",
         opciones: [
           "Se pierde un aminoácido, pero el marco de lectura se mantiene",
@@ -589,6 +649,7 @@ const partes = [
         explicacion: "Las mutaciones de cambio de marco se deben a deleciones o inserciones de un número de nucleótidos que no es múltiplo de tres. Si se pierden 3 (un codón), se pierde un aminoácido pero el resto se lee bien."
       },
       {
+        tema: "tema-15",
         texto: "Un feto tiene un cariotipo 69,XXY. ¿Qué tipo de anomalía es?",
         opciones: [
           "Aneuploidía: síndrome de Klinefelter",
@@ -600,6 +661,7 @@ const partes = [
         explicacion: "69 = 3 × 23: tiene tres juegos completos de cromosomas (triploidía), que es un múltiplo exacto y por tanto una euploidía. Conlleva aborto espontáneo. El síndrome de Klinefelter es 47,XXY."
       },
       {
+        tema: "tema-15",
         texto: "Una madre lactante, metabolizadora ultrarrápida por CYP2D6, toma codeína para la tos. ¿Qué riesgo hay para el bebé?",
         opciones: [
           "Ninguno, porque la codeína es un fármaco activo que se inactiva rápido",
@@ -613,6 +675,7 @@ const partes = [
 
       /* ---------- Tema 16: mutaciones y modelos de herencia ---------- */
       {
+        tema: "tema-16",
         texto: "Un padre afectado por una enfermedad dominante ligada al X (por ejemplo, el raquitismo hipofosfatémico) tiene hijos con una mujer sana. ¿Qué se espera?",
         opciones: [
           "Todas las hijas afectadas y ningún hijo afectado",
@@ -624,6 +687,7 @@ const partes = [
         explicacion: "El padre transmite su único X a todas sus hijas, que estarán afectadas porque basta un alelo alterado. A sus hijos les da el Y, así que no heredan la enfermedad de él."
       },
       {
+        tema: "tema-16",
         texto: "La estenosis pilórica es mucho más frecuente en varones (1/200) que en mujeres (1/1000). Según el modelo del umbral, ¿qué significa esto?",
         opciones: [
           "Que es una enfermedad ligada al cromosoma Y",
@@ -635,6 +699,7 @@ const partes = [
         explicacion: "En los rasgos cualitativos multifactoriales la predisposición es continua, pero la enfermedad solo aparece si se supera el umbral. Un umbral más bajo en varones significa que con menos factores causales ya la desarrollan."
       },
       {
+        tema: "tema-16",
         texto: "Una enfermedad afecta al 6% de los familiares de los pacientes y al 2% de la población general. ¿Cuánto vale λ y qué indica?",
         opciones: [
           "λ = 0,33: no hay agregación familiar",
@@ -648,6 +713,7 @@ const partes = [
 
       /* ---------- Tema 17: técnicas genéticas de laboratorio ---------- */
       {
+        tema: "tema-17",
         texto: "En este array CGH (ADN de control en rojo y del paciente en verde), ¿qué indican los puntos de los cromosomas 21 y X?",
         imagen: {
           src: "img/bioquimica3/array-cgh.svg",
@@ -663,6 +729,7 @@ const partes = [
         explicacion: "Entre las dos líneas amarillas está la normalidad. Si los puntos suben (verde), hay más ADN del paciente que de control: ganancia. Si bajan (rojo), hay más ADN de control: pérdida. Es justo el ejemplo de los apuntes: ganancia en el 21 y pérdida en el X."
       },
       {
+        tema: "tema-17",
         texto: "En la secuenciación de Sanger, en la posición marcada (?) aparecen dos picos superpuestos, de G y de A. ¿Qué indica?",
         imagen: {
           src: "img/bioquimica3/sanger.svg",
@@ -680,6 +747,7 @@ const partes = [
 
       /* ---------- Temas 18 y 19: inmunogenética ---------- */
       {
+        tema: "tema-18-19",
         texto: "En la recombinación somática de las inmunoglobulinas, ¿qué segmentos se combinan en cada cadena?",
         opciones: [
           "Cadena pesada: V y J; cadena ligera: V, D y J",
@@ -691,6 +759,7 @@ const partes = [
         explicacion: "La cadena pesada combina V (más de 80), D (al menos 30) y J (6); la ligera solo V y J. Las recombinasas codificadas por RAG1 y RAG2 eliminan el ADN entre los segmentos durante la maduración del linfocito B."
       },
       {
+        tema: "tema-18-19",
         texto: "¿Qué mecanismo de diversidad de las inmunoglobulinas NO se da en los receptores de los linfocitos T (TCR)?",
         opciones: [
           "La recombinación somática V(D)J",
@@ -702,12 +771,14 @@ const partes = [
         explicacion: "Los TCR comparten casi todos los mecanismos de diversidad de las Ig, excepto la hipermutación somática. Esto ayuda a no generar linfocitos T que reaccionen contra las propias células. Además, los TCR nunca se secretan."
       },
       {
+        tema: "tema-18-19",
         texto: "¿Con qué enfermedad se asocia el alelo HLA-B27?",
         opciones: ["Espondilitis anquilosante", "Diabetes tipo 1", "Narcolepsia", "Fibrosis quística"],
         correcta: 0,
         explicacion: "HLA-B27 (MHC de clase I) se asocia a la espondilitis anquilosante. HLA-DQB1 se asocia a la diabetes tipo 1, y HLA-DR y HLA-DQ a la narcolepsia."
       },
       {
+        tema: "tema-18-19",
         texto: "¿Cómo actúan los fármacos inhibidores de puntos de control inmunitario frente al cáncer?",
         opciones: [
           "Bloquean receptores como CTLA-4 y PD-1, impidiendo que el tumor «apague» a los linfocitos T",
@@ -720,163 +791,5 @@ const partes = [
       }
     ]
   }
-];
-
-const preguntas = partes.flatMap((parte) => parte.preguntas);
-
-const formulario = document.getElementById("cuestionario");
-const resultado = document.getElementById("resultado");
-const botonCorregir = document.getElementById("corregir");
-const botonReiniciar = document.getElementById("reiniciar");
-const ventana = document.getElementById("ventana");
-const ventanaTexto = document.getElementById("ventana-texto");
-const botonCerrar = document.getElementById("cerrar");
-
-/* ---------- Construir el cuestionario ---------- */
-function crearCuestionario() {
-  let i = 0;
-
-  partes.forEach((parte) => {
-    const titulo = document.createElement("h2");
-    titulo.className = "parte-titulo";
-    titulo.textContent = parte.titulo;
-    formulario.append(titulo);
-
-    parte.preguntas.forEach((p) => {
-      formulario.append(crearPregunta(p, i));
-      i++;
-    });
-  });
-}
-
-function crearPregunta(p, i) {
-  const tarjeta = document.createElement("article");
-  tarjeta.className = "pregunta";
-
-  const cabecera = document.createElement("div");
-  cabecera.className = "pregunta-cabecera";
-
-  const numero = document.createElement("span");
-  numero.className = "pregunta-numero";
-  numero.textContent = `Pregunta ${i + 1} de ${preguntas.length}`;
-
-  const botonExplicacion = document.createElement("button");
-  botonExplicacion.type = "button";
-  botonExplicacion.className = "boton-explicacion";
-  botonExplicacion.textContent = "Explicación";
-  botonExplicacion.addEventListener("click", () => abrirExplicacion(p.explicacion));
-
-  cabecera.append(numero, botonExplicacion);
-
-  const texto = document.createElement("p");
-  texto.className = "pregunta-texto";
-  texto.textContent = p.texto;
-
-  tarjeta.append(cabecera, texto);
-
-  if (p.imagen) {
-    const imagen = document.createElement("img");
-    imagen.className = "pregunta-imagen";
-    imagen.src = p.imagen.src;
-    imagen.alt = p.imagen.alt;
-    imagen.loading = "lazy";
-    tarjeta.append(imagen);
-  }
-
-  const grupo = document.createElement("fieldset");
-  grupo.className = "opciones";
-
-  p.opciones.forEach((opcion, j) => {
-    const etiqueta = document.createElement("label");
-    etiqueta.className = "opcion";
-
-    const radio = document.createElement("input");
-    radio.type = "radio";
-    radio.name = `pregunta-${i}`;
-    radio.value = j;
-    radio.addEventListener("change", () => marcarSeleccion(grupo));
-
-    const marca = document.createElement("span");
-    marca.className = "marca";
-    marca.setAttribute("aria-hidden", "true");
-
-    const contenido = document.createElement("span");
-    contenido.textContent = opcion;
-
-    etiqueta.append(radio, marca, contenido);
-    grupo.append(etiqueta);
-  });
-
-  tarjeta.append(grupo);
-  return tarjeta;
-}
-
-/* ---------- Selección (azul) ---------- */
-function marcarSeleccion(grupo) {
-  grupo.querySelectorAll(".opcion").forEach((etiqueta) => {
-    const marcada = etiqueta.querySelector("input").checked;
-    etiqueta.classList.toggle("seleccionada", marcada);
-  });
-}
-
-/* ---------- Corregir (verde / rojo) ---------- */
-function corregir() {
-  let aciertos = 0;
-
-  document.querySelectorAll(".opciones").forEach((grupo, i) => {
-    const etiquetas = grupo.querySelectorAll(".opcion");
-
-    etiquetas.forEach((etiqueta, j) => {
-      const radio = etiqueta.querySelector("input");
-      etiqueta.classList.remove("seleccionada", "correcta", "incorrecta");
-
-      if (j === preguntas[i].correcta) {
-        etiqueta.classList.add("correcta");
-        if (radio.checked) aciertos++;
-      } else if (radio.checked) {
-        etiqueta.classList.add("incorrecta");
-      }
-
-      radio.disabled = true;
-    });
-  });
-
-  formulario.classList.add("corregido");
-  resultado.textContent = `Has acertado ${aciertos} de ${preguntas.length}`;
-  botonCorregir.hidden = true;
-  botonReiniciar.hidden = false;
-}
-
-/* ---------- Volver a intentar ---------- */
-function reiniciar() {
-  formulario.reset();
-  formulario.classList.remove("corregido");
-
-  document.querySelectorAll(".opcion").forEach((etiqueta) => {
-    etiqueta.classList.remove("seleccionada", "correcta", "incorrecta");
-    etiqueta.querySelector("input").disabled = false;
-  });
-
-  resultado.textContent = "";
-  botonCorregir.hidden = false;
-  botonReiniciar.hidden = true;
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-/* ---------- Ventana de explicación ---------- */
-function abrirExplicacion(texto) {
-  ventanaTexto.textContent = texto;
-  ventana.showModal();
-}
-
-botonCerrar.addEventListener("click", () => ventana.close());
-
-// Cerrar al hacer clic fuera de la ventana
-ventana.addEventListener("click", (evento) => {
-  if (evento.target === ventana) ventana.close();
-});
-
-botonCorregir.addEventListener("click", corregir);
-botonReiniciar.addEventListener("click", reiniciar);
-
-crearCuestionario();
+]
+};

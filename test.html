@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test · Quiz de enfermería</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="prueba.css">
+  <link rel="stylesheet" href="Bioquimica4-6.css">
+  <link rel="stylesheet" href="bioquimica3.css">
+  <link rel="stylesheet" href="apuntes.css">
+  <link rel="stylesheet" href="fisiologia.css">
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <main class="prueba">
+    <nav id="migas" class="migas" aria-label="Ruta"></nav>
+
+    <header class="test-cabecera">
+      <p id="test-bloque" class="test-bloque"></p>
+      <h1 id="test-titulo">Test</h1>
+      <p id="test-subtitulo" class="test-subtitulo" hidden></p>
+    </header>
+
+    <div class="barra-modo">
+      <div class="selector-modo" role="group" aria-label="Modo del test">
+        <button type="button" data-modo="practica" aria-pressed="false">Práctica</button>
+        <button type="button" data-modo="examen" aria-pressed="false">Examen</button>
+      </div>
+      <p id="modo-ayuda" class="modo-ayuda"></p>
+      <label id="opcion-limite" class="opcion-limite">
+        <input type="checkbox" id="limite">
+        Tiempo límite (1 minuto por pregunta)
+      </label>
+    </div>
+
+    <div id="estado" class="estado" aria-live="off">
+      <span id="progreso"></span>
+      <span id="reloj" class="reloj" hidden></span>
+    </div>
+
+    <p id="aviso" class="aviso" hidden></p>
+
+    <form id="cuestionario" class="cuestionario" novalidate></form>
+
+    <p id="resultado" class="resultado" role="status" aria-live="polite"></p>
+
+    <section id="resumen" class="resumen" aria-label="Resumen del test" hidden></section>
+
+    <div class="acciones">
+      <button type="button" id="corregir" class="boton">Corregir</button>
+      <button type="button" id="reiniciar" class="boton-secundario" hidden>Volver a intentar</button>
+      <a id="otro" class="boton-secundario" href="a-medida.html" hidden>Otro test</a>
+      <a id="siguiente" class="boton" href="Fisiologia.html" hidden>Siguiente test</a>
+    </div>
+  </main>
+
+  <dialog id="ventana" class="ventana" aria-labelledby="ventana-titulo">
+    <div class="ventana-contenido">
+      <h2 id="ventana-titulo">Explicación</h2>
+      <p id="ventana-texto"></p>
+      <a id="ventana-apuntes" class="enlace-apuntes" target="_blank" rel="noopener" hidden></a>
+      <button type="button" id="cerrar" class="boton-cerrar">Cerrar</button>
+    </div>
+  </dialog>
+
+  <script src="apuntes-datos.js"></script>
+  <script src="bioquimica4-6.js"></script>
+  <script src="bioquimica2.js"></script>
+  <script src="bioquimica3.js"></script>
+  <script src="fisiologia-bloque1.js"></script>
+  <script src="fisiologia-bloque2.js"></script>
+  <script src="fisiologia-bloque3.js"></script>
+  <script src="fisiologia-bloque4.js"></script>
+  <script src="fisiologia-bloque5.js"></script>
+  <script src="fisio2-tema07.js"></script>
+  <script src="fisio2-tema08-estructura.js"></script>
+  <script src="fisio2-tema08-metabolismo.js"></script>
+  <script src="fisio2-tema09.js"></script>
+  <script src="fisio2-tema10.js"></script>
+  <script src="fisio2-tema11.js"></script>
+  <script src="fisio2-tema12-nucleotidos.js"></script>
+  <script src="fisio2-tema12-hemoglobina.js"></script>
+  <script src="fisio2-examen.js"></script>
+  <script src="colecciones.js"></script>
+  <script src="quiz-datos.js"></script>
+  <script src="quiz-motor.js"></script>
+</body>
+</html>

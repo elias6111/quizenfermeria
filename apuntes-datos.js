@@ -285,6 +285,77 @@ const asignaturasApuntes = [
         ]
       }
     ]
+  },
+  {
+    id: "fisiologia2",
+    nombre: "Fisiología · Parcial 2",
+    descripcion: "Enzimología y metabolismo de glúcidos, lípidos, aminoácidos, nucleótidos y hemoglobina",
+    completo: "fisiologia2-completo",
+    bloques: [
+      {
+        titulo: "Bloque I · Enzimas y glúcidos",
+        temas: [
+          {
+            numero: "7",
+            titulo: "Enzimología",
+            esencial: "Clases de enzimas, centro activo, Km y Vmáx, inhibición, regulación alostérica, isoenzimas y vitaminas",
+            archivo: "tema-07"
+          },
+          {
+            numero: "8-I",
+            titulo: "Glúcidos: estructura y función",
+            esencial: "Clasificación, isomería, formas cíclicas, derivados, disacáridos y polisacáridos",
+            archivo: "tema-08-1"
+          },
+          {
+            numero: "8-II",
+            titulo: "Metabolismo de glúcidos",
+            esencial: "GLUT, glucólisis, respiración celular, ROS, ruta de las pentosas, gluconeogénesis y glucógeno",
+            archivo: "tema-08-2"
+          }
+        ]
+      },
+      {
+        titulo: "Bloque II · Lípidos",
+        temas: [
+          {
+            numero: "9",
+            titulo: "Lípidos: estructura y función",
+            esencial: "Ácidos grasos, triglicéridos, fosfolípidos, esfingolípidos, vitaminas liposolubles, colesterol y eicosanoides",
+            archivo: "tema-09"
+          },
+          {
+            numero: "10",
+            titulo: "Metabolismo de lípidos",
+            esencial: "Digestión y lipasas, β-oxidación, cuerpos cetónicos, síntesis de ácidos grasos y de colesterol",
+            archivo: "tema-10"
+          }
+        ]
+      },
+      {
+        titulo: "Bloque III · Aminoácidos, nucleótidos y hemoglobina",
+        temas: [
+          {
+            numero: "11",
+            titulo: "Metabolismo de aminoácidos",
+            esencial: "Fuentes y destinos, transaminación (ALT, AST), desaminación, ciclo de la urea y aminoacidopatías",
+            archivo: "tema-11"
+          },
+          {
+            numero: "12-I",
+            titulo: "Nucleótidos y su metabolismo",
+            esencial: "Bases, nucleósidos, nucleótidos, PRPP, vías de recuperación y de novo, degradación y ácido úrico",
+            archivo: "tema-12-1"
+          },
+          {
+            numero: "12-II",
+            titulo: "Metabolismo de la hemoglobina",
+            esencial: "Síntesis del hemo (ALA sintasa), porfirias, degradación a bilirrubina e ictericias",
+            archivo: "tema-12-2"
+          }
+        ]
+      }
+    ]
   }
 ];
 

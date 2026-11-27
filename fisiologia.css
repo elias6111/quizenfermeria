@@ -66,3 +66,84 @@
 .acciones a.boton {
   margin-top: 0;
 }
+
+/* ---------- Preguntas de desarrollo ---------- */
+.desarrollo {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.desarrollo-texto {
+  width: 100%;
+  font: inherit;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  padding: 0.9rem 1rem;
+  color: var(--ciruela);
+  background: #fff;
+  border: 2px solid #f4a6c0;
+  border-radius: 14px;
+  resize: vertical;
+}
+
+.desarrollo-texto:focus-visible {
+  outline: 3px solid var(--ciruela);
+  outline-offset: 2px;
+}
+
+.desarrollo-texto[readonly] {
+  background: #fff6fa;
+  color: var(--rosa-oscuro);
+}
+
+.correccion {
+  text-align: left;
+  padding: 1.1rem 1.2rem;
+  background: #fff;
+  border: 2px solid #16a34a;
+  border-radius: 14px;
+}
+
+.correccion-titulo {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--rosa-oscuro);
+}
+
+.correccion-titulo:first-child {
+  margin-top: 0;
+}
+
+.correccion-modelo {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+.checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 1.02rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.checklist-check {
+  flex: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.15rem;
+  accent-color: #16a34a;
+  cursor: pointer;
+}

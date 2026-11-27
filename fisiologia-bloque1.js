@@ -7,6 +7,7 @@ const fisiologiaBloque1 = {
     /* ---------- Tema 1: introducción a la fisiología ---------- */
     {
       id: "t01",
+      tema: "tema-01",
       numero: "1",
       titulo: "Introducción a la fisiología",
       preguntas: [
@@ -106,6 +107,7 @@ const fisiologiaBloque1 = {
     /* ---------- Tema 2: líquidos corporales ---------- */
     {
       id: "t02",
+      tema: "tema-02",
       numero: "2",
       titulo: "Líquidos corporales",
       preguntas: [
@@ -190,6 +192,7 @@ const fisiologiaBloque1 = {
     /* ---------- Temas 3 y 4: potenciales eléctricos ---------- */
     {
       id: "t03",
+      tema: "tema-03-04",
       numero: "3–4",
       titulo: "Potenciales eléctricos",
       preguntas: [
@@ -289,6 +292,7 @@ const fisiologiaBloque1 = {
     /* ---------- Tema 5: transmisión sináptica ---------- */
     {
       id: "t05",
+      tema: "tema-05",
       numero: "5",
       titulo: "Transmisión sináptica",
       preguntas: [
@@ -388,6 +392,7 @@ const fisiologiaBloque1 = {
     /* ---------- Tema 6: sistema nervioso autónomo ---------- */
     {
       id: "t06",
+      tema: "tema-06",
       numero: "6",
       titulo: "Sistema nervioso autónomo",
       preguntas: [
@@ -491,18 +496,21 @@ const fisiologiaBloque1 = {
       titulo: "Repaso del bloque I",
       preguntas: [
         {
+          tema: "tema-02",
           texto: "¿Qué volumen de líquido intracelular tiene una persona de 50 kg?",
           opciones: ["10 L", "20 L", "30 L", "12,5 L"],
           correcta: 1,
           explicacion: "LIC = 0,4 × peso = 0,4 × 50 = 20 L. El agua total serían 30 L y el LEC 10 L."
         },
         {
+          tema: "tema-02",
           texto: "¿Qué osmolaridad tiene una disolución de CaCl₂ 0,2 M?",
           opciones: ["200 mOsm/L", "400 mOsm/L", "600 mOsm/L", "800 mOsm/L"],
           correcta: 2,
           explicacion: "El CaCl₂ se disocia en 3 partículas (1 Ca²⁺ y 2 Cl⁻): 3 × 0,2 = 0,6 Osm/L = 600 mOsm/L."
         },
         {
+          tema: "tema-03-04",
           texto: "Si a un cultivo celular le aumentamos mucho la concentración de Na⁺ extracelular, ¿cambiará el potencial de membrana?",
           opciones: [
             "No, porque en reposo solo importa el K⁺",
@@ -514,18 +522,21 @@ const fisiologiaBloque1 = {
           explicacion: "El potencial de membrana depende de las concentraciones de los iones a ambos lados y de su permeabilidad. Aunque el K⁺ sea más permeable, cambiar el Na⁺ modifica el potencial."
         },
         {
+          tema: "tema-03-04",
           texto: "¿Dónde se genera normalmente el potencial de acción en una neurona?",
           opciones: ["En el cono axónico (segmento inicial del axón)", "En el terminal presináptico", "En las dendritas", "En la vaina de mielina"],
           correcta: 0,
           explicacion: "La zona de disparo es el cono axónico, que tiene gran densidad de canales de Na⁺ dependientes de voltaje. Desde ahí se propaga sin decremento hasta el terminal."
         },
         {
+          tema: "tema-03-04",
           texto: "¿Qué enfermedad desmielinizante afecta al sistema nervioso periférico y suele aparecer tras una infección?",
           opciones: ["Esclerosis múltiple", "Esclerosis lateral amiotrófica", "Síndrome de Guillain-Barré", "Enfermedad de Parkinson"],
           correcta: 2,
           explicacion: "El síndrome de Guillain-Barré afecta al SNP, a menudo tras una infección (Campylobacter jejuni), y sus déficits suelen revertir. La esclerosis múltiple es autoinmune y afecta al SNC."
         },
         {
+          tema: "tema-06",
           texto: "Un fármaco bloquea los receptores muscarínicos. ¿Qué efecto cabe esperar?",
           opciones: [
             "Más salivación",
@@ -537,24 +548,28 @@ const fisiologiaBloque1 = {
           explicacion: "Los receptores muscarínicos median los efectos parasimpáticos. Si se bloquean, predomina el simpático: sube la frecuencia cardiaca, baja la salivación y se dilata la pupila (como con la atropina)."
         },
         {
+          tema: "tema-06",
           texto: "¿Qué tipo de receptor es el nicotínico?",
           opciones: ["Un receptor acoplado a proteína G", "Un receptor ionotrópico (canal iónico)", "Un receptor intracelular", "Un receptor adrenérgico"],
           correcta: 1,
           explicacion: "El receptor nicotínico de acetilcolina es un canal iónico (ionotrópico). Los muscarínicos y los adrenérgicos están acoplados a proteínas G."
         },
         {
+          tema: "tema-06",
           texto: "En situación de estrés intenso, ¿cuál de estas respuestas NO esperarías?",
           opciones: ["Broncodilatación", "Aumento de la glucogenólisis", "Aumento de la motilidad digestiva", "Midriasis"],
           correcta: 2,
           explicacion: "En el estrés se activa el simpático: midriasis, taquicardia, broncodilatación, glucogenólisis y lipólisis, y se frena la digestión (vasoconstricción abdominal)."
         },
         {
+          tema: "tema-06",
           texto: "¿Qué sistema nervioso puede controlar el intestino incluso de forma independiente del SNC?",
           opciones: ["El sistema nervioso entérico", "El sistema somático", "El sistema límbico", "El cerebelo"],
           correcta: 0,
           explicacion: "El sistema nervioso entérico (plexos mientérico, para la motilidad, y submucoso, para la secreción) puede funcionar de forma autónoma, aunque lo regulan el simpático y el parasimpático."
         },
         {
+          tema: "tema-05",
           texto: "En la sinapsis química, ¿qué ocurre inmediatamente después de que el Ca²⁺ entra en el terminal presináptico?",
           opciones: [
             "El neurotransmisor se une a su receptor",
@@ -564,6 +579,52 @@ const fisiologiaBloque1 = {
           ],
           correcta: 3,
           explicacion: "Orden: llega el potencial de acción → se abren canales de Ca²⁺ → entra Ca²⁺ → exocitosis de las vesículas → el neurotransmisor difunde y se une a su receptor → respuesta postsináptica."
+        }
+      ]
+    },
+    /* ---------- Ejemplo: preguntas de desarrollo (autocorrección) ---------- */
+    {
+      id: "ej-desarrollo",
+      tema: "tema-01",
+      numero: "✎",
+      etiqueta: "Desarrollo (ejemplo)",
+      titulo: "Preguntas de desarrollo",
+      preguntas: [
+        {
+          tipo: "desarrollo",
+          texto: "Define qué es el medio interno y explica por qué su composición debe mantenerse estable.",
+          respuestaModelo:
+            "El medio interno es el líquido extracelular que rodea a las células (plasma y líquido intersticial). Tiene una composición parecida al agua de mar y constituye el entorno del que las células toman nutrientes y oxígeno y al que vierten sus desechos. Debe mantenerse muy estable (pH, temperatura, concentración de iones, glucosa, etc.) porque las células solo funcionan correctamente dentro de márgenes estrechos; de mantener esa estabilidad se encarga la homeostasis.",
+          puntosClave: [
+            "Es el líquido extracelular que rodea a las células (plasma + intersticial)",
+            "Es el entorno de intercambio: nutrientes/O₂ y desechos de las células",
+            "Debe mantenerse estable (pH, iones, temperatura, glucosa…)",
+            "Las células solo funcionan en márgenes estrechos → de ello se ocupa la homeostasis"
+          ]
+        },
+        {
+          tipo: "desarrollo",
+          texto: "Explica el mecanismo de retroalimentación negativa y pon un ejemplo fisiológico.",
+          respuestaModelo:
+            "La retroalimentación (o retroacción) negativa es un bucle de regulación en el que la respuesta del sistema revierte el cambio que la ha provocado: si una variable sube, la respuesta la hace bajar, y al revés, de modo que la variable vuelve a su valor normal. Intervienen un receptor que detecta el cambio, un centro de control (nervioso o endocrino) que lo compara con un valor de referencia, y un efector que ejecuta la respuesta. Ejemplo: la regulación de la glucemia (si sube la glucosa, el páncreas libera insulina y la glucosa baja) o de la temperatura corporal (si sube, sudoración y vasodilatación la bajan).",
+          puntosClave: [
+            "La respuesta revierte el cambio (la variable vuelve a su valor normal)",
+            "Componentes: receptor, centro de control y efector",
+            "El centro de control actúa vía sistema nervioso o endocrino",
+            "Ejemplo correcto (glucemia-insulina, termorregulación, presión arterial…)"
+          ]
+        },
+        {
+          tipo: "desarrollo",
+          texto: "¿Qué diferencia hay entre la retroalimentación negativa y la positiva? Da un ejemplo de retroalimentación positiva.",
+          respuestaModelo:
+            "En la retroalimentación negativa la respuesta se opone al cambio y estabiliza el sistema (es la más frecuente y la base de la homeostasis). En la positiva, la respuesta amplifica el cambio inicial, alejando la variable de su punto de partida; suele ser transitoria y termina cuando se alcanza un objetivo. Ejemplos de retroalimentación positiva: las contracciones del parto (la oxitocina aumenta las contracciones, que a su vez estimulan más oxitocina) o la coagulación sanguínea.",
+          puntosClave: [
+            "Negativa: la respuesta se opone al cambio → estabiliza (homeostasis)",
+            "Positiva: la respuesta amplifica el cambio inicial",
+            "La positiva es transitoria y termina al cumplir un objetivo",
+            "Ejemplo de positiva (parto/oxitocina, coagulación…)"
+          ]
         }
       ]
     }

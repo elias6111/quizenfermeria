@@ -1,0 +1,589 @@
+/* Página de test común (test.html), test a medida (a-medida.html) y fallos (fallos.html) */
+
+.test-subtitulo {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--rosa-oscuro);
+}
+
+.parte-titulo {
+  margin-top: 0.75rem;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+  text-align: left;
+}
+
+/* ---------- Selector de modo ---------- */
+.barra-modo {
+  width: min(680px, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: -0.5rem;
+}
+
+.selector-modo {
+  display: inline-flex;
+  padding: 0.3rem;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+}
+
+.selector-modo button {
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  padding: 0.5rem 1.4rem;
+  cursor: pointer;
+}
+
+.selector-modo button[aria-pressed="true"] {
+  color: #fff;
+  background: var(--rosa-intenso);
+  box-shadow: 0 3px 0 var(--rosa-oscuro);
+}
+
+.selector-modo button:focus-visible,
+.opcion-limite input:focus-visible {
+  outline: 3px solid var(--ciruela);
+  outline-offset: 2px;
+}
+
+.modo-ayuda {
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: var(--rosa-oscuro);
+  text-align: center;
+}
+
+.opcion-limite {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.98rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.opcion-limite[hidden] {
+  display: none;
+}
+
+.opcion-limite input {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--rosa-intenso);
+}
+
+/* ---------- Barra de progreso y cronómetro (se queda arriba al bajar) ---------- */
+.estado {
+  position: sticky;
+  top: 0.6rem;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem 1rem;
+  padding: 0.45rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ciruela);
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 999px;
+  box-shadow: 0 4px 14px rgba(161, 29, 75, 0.18);
+}
+
+.estado[hidden],
+.reloj[hidden] {
+  display: none;
+}
+
+.reloj {
+  font-variant-numeric: tabular-nums;
+  color: var(--rosa-oscuro);
+}
+
+.reloj-apurado {
+  color: #dc2626;
+}
+
+.resultado {
+  scroll-margin-top: 4.5rem;
+}
+
+.aviso {
+  padding: 1.2rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: var(--rosa-claro);
+  border-radius: 20px;
+}
+
+/* ---------- Tarjetas ---------- */
+.pregunta {
+  scroll-margin-top: 4.5rem;
+  text-align: left;
+}
+
+.pregunta-cabecera {
+  flex-wrap: wrap;
+}
+
+.pregunta-tema {
+  margin-right: auto;
+  padding: 0.1rem 0.7rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+  background: #fff;
+  border-radius: 999px;
+}
+
+.boton-explicacion[hidden] {
+  display: none;
+}
+
+.boton-ver-respuesta {
+  align-self: flex-start;
+}
+
+/* Explicación que aparece en modo práctica al contestar */
+.explicacion-linea {
+  margin-top: 1rem;
+  padding: 1rem 1.15rem;
+  font-size: 1.02rem;
+  line-height: 1.5;
+  background: #fff;
+  border-left: 5px solid #16a34a;
+  border-radius: 12px;
+  animation: aparecer 0.2s ease-out;
+}
+
+.explicacion-linea.es-fallo {
+  border-left-color: #dc2626;
+}
+
+.explicacion-linea p + p {
+  margin-top: 0.4rem;
+}
+
+.explicacion-veredicto {
+  font-weight: 600;
+  color: #15803d;
+}
+
+.es-fallo .explicacion-veredicto {
+  color: #b91c1c;
+}
+
+.enlace-apuntes {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-weight: 600;
+  color: var(--rosa-intenso);
+}
+
+.enlace-apuntes:hover {
+  color: var(--rosa-oscuro);
+}
+
+.enlace-apuntes::after {
+  content: " ↗";
+}
+
+.ventana .enlace-apuntes {
+  display: block;
+  margin: -0.75rem 0 1.25rem;
+}
+
+.ventana .enlace-apuntes[hidden] {
+  display: none;
+}
+
+/* ---------- Resumen ---------- */
+.resumen {
+  width: min(680px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.6rem;
+  text-align: left;
+  background: var(--rosa-claro);
+  border-radius: 24px;
+  box-shadow: 0 5px 0 rgba(161, 29, 75, 0.3);
+}
+
+.resumen[hidden] {
+  display: none;
+}
+
+.resumen-cifras {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* Círculo con el porcentaje */
+.resumen-nota {
+  --color: #16a34a;
+  flex: none;
+  width: 7.5rem;
+  height: 7.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: conic-gradient(var(--color) calc(var(--porcentaje) * 1%), #fff 0);
+}
+
+.resumen-nota.suspenso {
+  --color: #dc2626;
+}
+
+.resumen-nota span {
+  width: 5.7rem;
+  height: 5.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  background: var(--rosa-claro);
+  border-radius: 50%;
+}
+
+.resumen-nota small {
+  font-size: 1rem;
+}
+
+.resumen-datos {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 0.3rem 1.5rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.resumen-datos strong {
+  font-size: 1.25rem;
+  color: var(--rosa-oscuro);
+}
+
+.resumen-aviso,
+.resumen-fallos,
+.resumen-perfecto {
+  font-size: 1.02rem;
+  font-weight: 500;
+  padding: 0.7rem 1rem;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.resumen-fallos a {
+  font-weight: 600;
+  color: var(--rosa-intenso);
+}
+
+.resumen-titulo {
+  margin-top: 0.4rem;
+  font-size: 1.3rem;
+  color: var(--rosa-oscuro);
+}
+
+/* Aciertos por tema */
+.resumen-temas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.resumen-tema {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 0.3rem 0.8rem;
+  padding: 0.7rem 0.9rem;
+  background: #fff;
+  border-radius: 12px;
+}
+
+.resumen-tema-nombre {
+  font-weight: 500;
+}
+
+.resumen-tema-cifra {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.resumen-tema-apuntes {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--rosa-intenso);
+}
+
+.resumen-barra {
+  grid-column: 1 / -1;
+  grid-row: 2;
+  height: 0.5rem;
+  overflow: hidden;
+  background: var(--rosa-claro);
+  border-radius: 999px;
+}
+
+.resumen-barra span {
+  display: block;
+  height: 100%;
+  background: #16a34a;
+  border-radius: 999px;
+}
+
+.resumen-barra span.suspenso {
+  background: #dc2626;
+}
+
+/* Preguntas para repasar */
+.resumen-falladas {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.fallada {
+  padding: 1rem 1.1rem;
+  line-height: 1.45;
+  background: #fff;
+  border-radius: 14px;
+}
+
+.fallada-texto {
+  display: block;
+  margin-bottom: 0.45rem;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: var(--ciruela);
+  text-decoration: none;
+}
+
+.fallada-texto:hover {
+  color: var(--rosa-intenso);
+}
+
+.fallada-tuya {
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+.fallada-buena {
+  color: #15803d;
+  font-weight: 600;
+}
+
+.fallada-explicacion {
+  margin-top: 0.4rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed #f4a6c0;
+}
+
+.acciones a.boton-secundario {
+  text-decoration: none;
+}
+
+/* ---------- Página "Test a medida" ---------- */
+.medida-formulario {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.medida-paso {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.3rem 1.4rem;
+  background: var(--rosa-claro);
+  border: 0;
+  border-radius: 22px;
+  box-shadow: 0 5px 0 rgba(161, 29, 75, 0.3);
+}
+
+.medida-paso legend {
+  float: left;
+  width: 100%;
+  margin-bottom: 0.2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+}
+
+.pastillas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.pastilla {
+  position: relative;
+  cursor: pointer;
+}
+
+.pastilla input {
+  position: absolute;
+  opacity: 0;
+}
+
+.pastilla span {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  color: var(--rosa-oscuro);
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 999px;
+}
+
+.pastilla input:checked + span {
+  color: #fff;
+  background: var(--rosa-intenso);
+}
+
+.pastilla input:focus-visible + span {
+  outline: 3px solid var(--ciruela);
+  outline-offset: 2px;
+}
+
+.medida-bloque h3 {
+  margin: 0.4rem 0 0.5rem;
+  font-size: 1.05rem;
+  color: var(--rosa-oscuro);
+}
+
+.medida-temas {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.5rem;
+}
+
+.medida-tema {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.6rem 0.8rem;
+  font-weight: 500;
+  line-height: 1.3;
+  background: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.medida-tema input {
+  flex: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.1rem;
+  accent-color: var(--rosa-intenso);
+}
+
+.medida-tema small {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--rosa-oscuro);
+}
+
+.medida-atajos {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.enlace-boton {
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--rosa-intenso);
+  background: none;
+  border: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.medida-resumen {
+  font-weight: 500;
+  color: var(--rosa-oscuro);
+  text-align: center;
+}
+
+.medida-formulario .boton {
+  align-self: center;
+  border: 0;
+  cursor: pointer;
+}
+
+.medida-formulario .boton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ---------- Página "Mis fallos" ---------- */
+.fallos-tema .tema-acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.fallos-contador {
+  background: #dc2626;
+  box-shadow: 0 3px 0 #991b1b;
+}
+
+.fallos-vacio {
+  padding: 1.2rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-align: center;
+  background: var(--rosa-claro);
+  border-radius: 20px;
+}
+
+.fallos-cabecera-asignatura {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+}
+
+.fallos-cabecera-asignatura h2 {
+  margin: 0.5rem 0;
+}
+
+/* ---------- Accesos en la página de asignaturas ---------- */
+.accesos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.accesos .boton {
+  margin-top: 0;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.8rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .explicacion-linea {
+    animation: none;
+  }
+}

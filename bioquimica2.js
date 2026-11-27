@@ -1,6 +1,11 @@
 // Preguntas del cuestionario Bioquimica 2, agrupadas en partes por dificultad.
+// "tema" es el archivo del tema en los apuntes (apuntes-datos.js); sirve para los fallos y el test a medida.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción).
-const partes = [
+const bancoBioquimica2 = {
+  id: "bioquimica2",
+  asignatura: "bioquimica",
+  titulo: "Bioquimica 2",
+  partes: [
   /* ==========================================================================
      PARTE 1: FÁCIL
      ========================================================================== */
@@ -9,12 +14,14 @@ const partes = [
     preguntas: [
       /* ---------- Tema 1: biomoléculas inorgánicas y agua ---------- */
       {
+        tema: "tema-01",
         texto: "¿Cuáles son los bioelementos primarios, que constituyen más del 95% en peso de la materia viva?",
         opciones: ["Na, K, Ca, Mg y Cl", "Fe, Mn, Cu, Co y Zn", "C, H, O, N, P y S", "C, H, O, Na, K y Fe"],
         correcta: 2,
         explicacion: "Los bioelementos primarios son C, H, O, N, P y S. Los secundarios (Na, K, Ca, Mg, Cl) rondan el 1% y los oligoelementos (Fe, Mn, Cu, Co, Zn) están en cantidades mínimas pero son esenciales."
       },
       {
+        tema: "tema-01",
         texto: "¿Qué porcentaje aproximado del organismo es agua?",
         opciones: ["10-20%", "30-40%", "60-70%", "90-95%"],
         correcta: 2,
@@ -23,18 +30,21 @@ const partes = [
 
       /* ---------- Tema 2: aminoácidos y enlace peptídico ---------- */
       {
+        tema: "tema-02",
         texto: "¿Cuántos aminoácidos proteicos diferentes forman las proteínas?",
         opciones: ["4", "10", "20", "64"],
         correcta: 2,
         explicacion: "Las proteínas son polímeros lineales formados por 20 aminoácidos proteicos distintos, todos ellos α-aminoácidos."
       },
       {
+        tema: "tema-02",
         texto: "¿Qué molécula se libera cuando se forma un enlace peptídico entre dos aminoácidos?",
         opciones: ["Una molécula de agua (H₂O)", "Una molécula de CO₂", "Una molécula de amoniaco (NH₃)", "Una molécula de oxígeno (O₂)"],
         correcta: 0,
         explicacion: "El enlace peptídico se forma entre el grupo carboxilo de un aminoácido y el grupo amino del siguiente, liberándose una molécula de agua."
       },
       {
+        tema: "tema-02",
         texto: "¿Cuál de estas parejas corresponde a aminoácidos con cadena lateral ácida?",
         opciones: ["Lisina y Arginina", "Aspártico y Glutámico", "Fenilalanina y Triptófano", "Serina y Treonina"],
         correcta: 1,
@@ -43,6 +53,7 @@ const partes = [
 
       /* ---------- Tema 3: estructura y clasificación de proteínas ---------- */
       {
+        tema: "tema-03",
         texto: "¿Qué describe la estructura primaria de una proteína?",
         opciones: [
           "El plegamiento global tridimensional",
@@ -54,6 +65,7 @@ const partes = [
         explicacion: "La estructura primaria es la secuencia de aminoácidos de la proteína: indica qué aminoácidos la componen, su número y el orden en que se encuentran."
       },
       {
+        tema: "tema-03",
         texto: "¿Qué nivel estructural corresponde a la asociación de dos o más cadenas polipeptídicas?",
         opciones: ["Estructura primaria", "Estructura secundaria", "Estructura terciaria", "Estructura cuaternaria"],
         correcta: 3,
@@ -62,6 +74,7 @@ const partes = [
 
       /* ---------- Tema 4: proteínas transportadoras de oxígeno ---------- */
       {
+        tema: "tema-04",
         texto: "¿Cuál es la función principal de la hemoglobina?",
         opciones: [
           "Almacenar oxígeno dentro del músculo",
@@ -73,18 +86,21 @@ const partes = [
         explicacion: "La hemoglobina, contenida en los eritrocitos, transporta el oxígeno desde los pulmones hasta los tejidos del organismo a través de la sangre."
       },
       {
+        tema: "tema-04",
         texto: "¿Cuántas moléculas de O₂ puede transportar como máximo una molécula de hemoglobina?",
         opciones: ["1", "2", "4", "8"],
         correcta: 2,
         explicacion: "La hemoglobina tiene 4 grupos hemo (uno por cadena), cada uno con un Fe²⁺ capaz de unir una molécula de O₂: en total, 4 moléculas de O₂."
       },
       {
+        tema: "tema-04",
         texto: "¿En qué tejido se encuentra la mioglobina?",
         opciones: ["En el plasma sanguíneo", "En el interior de los eritrocitos", "En el músculo esquelético y cardíaco", "En el tejido adiposo"],
         correcta: 2,
         explicacion: "La mioglobina almacena oxígeno en el músculo esquelético y cardíaco, actuando como reserva y facilitando su difusión dentro de la célula."
       },
       {
+        tema: "tema-04",
         texto: "¿Qué caracteriza a la metahemoglobina?",
         opciones: [
           "Tiene el hierro oxidado a Fe³⁺ y no une O₂ de forma normal",
@@ -96,6 +112,7 @@ const partes = [
         explicacion: "Cuando el hierro del hemo pasa de ferroso (Fe²⁺) a férrico (Fe³⁺) se forma metahemoglobina, que no puede unir el O₂ de forma normal."
       },
       {
+        tema: "tema-04",
         texto: "¿Con qué enfermedad se relaciona la hemoglobina S (HbS)?",
         opciones: ["Enfermedad de Wilson", "Diabetes mellitus", "Escorbuto", "Anemia falciforme"],
         correcta: 3,
@@ -104,30 +121,35 @@ const partes = [
 
       /* ---------- Tema 5: proteínas del plasma y lipoproteínas ---------- */
       {
+        tema: "tema-05",
         texto: "¿Qué porcentaje aproximado del plasma corresponde a proteínas?",
         opciones: ["1%", "7%", "25%", "54%"],
         correcta: 1,
         explicacion: "Las proteínas constituyen alrededor del 7% del plasma. El 54% es la proporción de albúmina dentro del total de proteínas plasmáticas, no del plasma."
       },
       {
+        tema: "tema-05",
         texto: "¿Qué técnica separa las proteínas plasmáticas en bandas según su carga eléctrica para obtener un proteinograma?",
         opciones: ["Centrifugación", "Electroforesis", "Reacción de Edman", "Paracentesis"],
         correcta: 1,
         explicacion: "La electroforesis separa las proteínas del suero en bandas (albúmina, α1, α2, β y γ-globulinas) según su carga eléctrica; el resultado es el proteinograma."
       },
       {
+        tema: "tema-05",
         texto: "¿Qué células sintetizan las inmunoglobulinas?",
         opciones: ["Los hepatocitos", "Los fibroblastos", "Los linfocitos B", "Los eritrocitos"],
         correcta: 2,
         explicacion: "Las inmunoglobulinas son sintetizadas por los linfocitos B y participan en la respuesta inmunitaria. Por eso son la excepción a la síntesis hepática de las proteínas plasmáticas."
       },
       {
+        tema: "tema-05",
         texto: "¿Qué inmunoglobulina se eleva en las alergias y en las infecciones por parásitos?",
         opciones: ["IgE", "IgD", "IgG", "IgM"],
         correcta: 0,
         explicacion: "La IgE es un monómero que interviene en las reacciones alérgicas y aumenta su concentración en caso de parásitos."
       },
       {
+        tema: "tema-05",
         texto: "¿Según qué criterio se clasifican habitualmente las lipoproteínas (quilomicrones, VLDL, IDL, LDL y HDL)?",
         opciones: ["Según su color", "Según su carga eléctrica", "Según el órgano que las degrada", "Según su densidad"],
         correcta: 3,
@@ -136,12 +158,14 @@ const partes = [
 
       /* ---------- Tema 6: escleroproteínas ---------- */
       {
+        tema: "tema-06",
         texto: "¿Qué células sintetizan el colágeno?",
         opciones: ["Los fibroblastos", "Los hepatocitos", "Los linfocitos B", "Los eritrocitos"],
         correcta: 0,
         explicacion: "El colágeno es sintetizado por los fibroblastos y forma parte de la matriz extracelular del tejido conectivo."
       },
       {
+        tema: "tema-06",
         texto: "¿Cuál es la propiedad característica que la elastina aporta a los tejidos?",
         opciones: [
           "Dureza e impermeabilidad, como en las uñas",
@@ -153,6 +177,7 @@ const partes = [
         explicacion: "La elastina tiene función estructural y da elasticidad: permite que tejidos como pulmones, arterias y ligamentos recuperen su forma inicial tras deformarse."
       },
       {
+        tema: "tema-06",
         texto: "¿Dónde se encuentra la α-queratina en el ser humano?",
         opciones: ["En tendones y huesos", "En el plasma sanguíneo", "En el cartílago y el humor vítreo", "En la epidermis, las uñas y el pelo"],
         correcta: 3,
@@ -169,12 +194,14 @@ const partes = [
     preguntas: [
       /* ---------- Tema 1: biomoléculas inorgánicas y agua ---------- */
       {
+        tema: "tema-01",
         texto: "Una alteración del pH debida a una variación en el contenido de bicarbonato se considera una situación:",
         opciones: ["Respiratoria", "Metabólica", "Oncótica", "Hemolítica"],
         correcta: 1,
         explicacion: "Las variaciones en el contenido de bicarbonato dan situaciones metabólicas (acidosis o alcalosis metabólica); las variaciones en el contenido de CO₂ dan situaciones respiratorias."
       },
       {
+        tema: "tema-01",
         texto: "¿Qué propiedad del agua tiende a estabilizar la temperatura del organismo porque hace falta mucho calor para elevar 1 °C la temperatura de 1 g?",
         opciones: ["Elevada tensión superficial", "Alta constante dieléctrica", "Elevada viscosidad", "Elevado calor específico"],
         correcta: 3,
@@ -183,12 +210,14 @@ const partes = [
 
       /* ---------- Tema 2: aminoácidos y enlace peptídico ---------- */
       {
+        tema: "tema-02",
         texto: "¿Qué dos aminoácidos proteicos tienen dos carbonos asimétricos?",
         opciones: ["Glicina y Alanina", "Isoleucina y Treonina", "Lisina y Arginina", "Cisteína y Metionina"],
         correcta: 1,
         explicacion: "La isoleucina (Ile) y la treonina (Thr) tienen 2 carbonos asimétricos, por lo que su número de isómeros se multiplica. La otra excepción es la glicina, que no tiene ninguno."
       },
       {
+        tema: "tema-02",
         texto: "A pH fisiológico, ¿cómo se encuentran los grupos amino y carboxilo de un aminoácido sin cadena lateral ionizable?",
         opciones: [
           "Ionizados (NH₃⁺ y COO⁻), con carga neta 0",
@@ -200,6 +229,7 @@ const partes = [
         explicacion: "A pH fisiológico los aminoácidos están en forma ionizada: el grupo amino protonado (NH₃⁺) y el carboxilo desprotonado (COO⁻). Las cargas se compensan y la carga neta es 0."
       },
       {
+        tema: "tema-02",
         texto: "¿En qué conformación se presenta normalmente el enlace peptídico?",
         opciones: [
           "En cis en todos los casos",
@@ -213,6 +243,7 @@ const partes = [
 
       /* ---------- Tema 3: estructura y clasificación de proteínas ---------- */
       {
+        tema: "tema-03",
         texto: "¿Qué reactivo se emplea en la reacción de Sanger y qué ocurre con el resto de la cadena?",
         opciones: [
           "Fenilisotiocianato; la cadena queda intacta",
@@ -224,6 +255,7 @@ const partes = [
         explicacion: "La reacción de Sanger usa dinitroclorobenceno e identifica únicamente el primer aminoácido, rompiendo el resto de la cadena. La de Edman (fenilisotiocianato) no rompe la proteína."
       },
       {
+        tema: "tema-03",
         texto: "¿Cómo se denomina la pérdida de la estructura cuaternaria de una proteína?",
         opciones: ["Desnaturalización", "Disociación", "Renaturalización", "Hidrólisis"],
         correcta: 1,
@@ -232,18 +264,21 @@ const partes = [
 
       /* ---------- Tema 4: proteínas transportadoras de oxígeno ---------- */
       {
+        tema: "tema-04",
         texto: "¿A qué posición de coordinación del Fe²⁺ del grupo hemo se une la molécula de O₂?",
         opciones: ["A las cuatro primeras", "A la quinta", "A la sexta", "A ninguna: se une a la globina"],
         correcta: 2,
         explicacion: "Las 4 primeras valencias del Fe²⁺ se unen a los N de los anillos pirrólicos, la 5ª al N de la histidina proximal (F8) y la 6ª es el lugar de unión del O₂."
       },
       {
+        tema: "tema-04",
         texto: "¿Cuál es la parte orgánica del grupo hemo, formada por cuatro anillos pirrólicos?",
         opciones: ["La globina", "La protoporfirina IX", "La bilirrubina", "La apomioglobina"],
         correcta: 1,
         explicacion: "El grupo hemo está formado por una parte orgánica, la protoporfirina IX (cuatro anillos pirrólicos), y una parte inorgánica, el ion ferroso (Fe²⁺) central. Es el responsable del color de la sangre."
       },
       {
+        tema: "tema-04",
         texto: "¿Para qué se utiliza en clínica la determinación de la HbA1c (hemoglobina glicosilada)?",
         opciones: [
           "Para diagnosticar la anemia falciforme",
@@ -255,6 +290,7 @@ const partes = [
         explicacion: "La HbA1c es HbA con glucosa unida. Su proporción depende de los valores de glucemia, por lo que se usa como indicador del control de la diabetes."
       },
       {
+        tema: "tema-04",
         texto: "¿Cuál de los siguientes cambios NO disminuye la afinidad de la hemoglobina por el O₂?",
         opciones: [
           "El aumento de la concentración de H⁺",
@@ -266,6 +302,7 @@ const partes = [
         explicacion: "El CO₂, los H⁺, el 2,3-BPG y la temperatura reducen la afinidad de la Hb por el O₂ cuando aumentan. Si el 2,3-BPG disminuye, ocurre lo contrario: la afinidad aumenta."
       },
       {
+        tema: "tema-04",
         texto: "¿Por qué es peligroso el monóxido de carbono (CO) para el transporte de oxígeno?",
         opciones: [
           "Porque compite con el O₂ por la hemoglobina y altera la entrega de O₂ a los tejidos",
@@ -279,6 +316,7 @@ const partes = [
 
       /* ---------- Tema 5: proteínas del plasma y lipoproteínas ---------- */
       {
+        tema: "tema-05",
         texto: "¿Cuál es una consecuencia frecuente de la hipoalbuminemia?",
         opciones: [
           "Hemorragias por falta de coágulo",
@@ -290,12 +328,14 @@ const partes = [
         explicacion: "Al bajar la albúmina disminuye la presión oncótica y el líquido sale de los vasos: aparecen edemas y ascitis (acumulación de líquido en el abdomen), típica de la cirrosis hepática."
       },
       {
+        tema: "tema-05",
         texto: "¿Qué transporta la transcortina, una α1-globulina?",
         opciones: ["Cobre", "Hemoglobina libre", "Glucocorticoides, como el cortisol", "Triglicéridos exógenos"],
         correcta: 2,
         explicacion: "La transcortina es una glucoproteína de síntesis hepática que fija corticoides y transporta los glucocorticoides (cortisol, corticosterona...) por el plasma hasta los tejidos diana."
       },
       {
+        tema: "tema-05",
         texto: "¿Qué afirmación sobre la proteína C reactiva (PCR) es correcta?",
         opciones: [
           "Es específica: indica la causa exacta de la inflamación",
@@ -307,6 +347,7 @@ const partes = [
         explicacion: "La PCR es una proteína de fase aguda que participa en la opsonización, fagocitosis y lisis de bacterias. Aumenta mucho tras un daño celular, pero es inespecífica: indica la respuesta inflamatoria, no la causa."
       },
       {
+        tema: "tema-05",
         texto: "¿Cuál es el origen de las VLDL y qué lípido transportan principalmente?",
         opciones: [
           "Se forman en el hígado a partir de triglicéridos endógenos",
@@ -320,18 +361,21 @@ const partes = [
 
       /* ---------- Tema 6: escleroproteínas ---------- */
       {
+        tema: "tema-06",
         texto: "¿Dónde predomina el colágeno tipo II?",
         opciones: ["En huesos y tendones", "En las membranas basales", "En el cartílago y el humor vítreo", "En uñas y pelo"],
         correcta: 2,
         explicacion: "El colágeno tipo II se encuentra sobre todo en el cartílago y en el humor vítreo del ojo. Es resistente, aunque menos que el tipo I."
       },
       {
+        tema: "tema-06",
         texto: "¿Qué tipo de colágeno está asociado a las membranas basales?",
         opciones: ["Tipo I", "Tipo II", "Tipo III", "Tipo IV"],
         correcta: 3,
         explicacion: "El colágeno tipo IV es el que se asocia a las membranas basales. El tipo I predomina en hueso, piel y tendones; el II en cartílago; el III en tejidos elásticos como pulmones y vasos."
       },
       {
+        tema: "tema-06",
         texto: "¿Qué afirmación sobre las β-queratinas es correcta?",
         opciones: [
           "Son las queratinas del pelo y las uñas humanas",
@@ -343,6 +387,7 @@ const partes = [
         explicacion: "Las β-queratinas tienen estructura secundaria de lámina β y se encuentran en sedas, escamas, plumas, garras y picos. En los humanos solo hay α-queratinas."
       },
       {
+        tema: "tema-06",
         texto: "¿Por qué el alisado con plancha a 150-180 °C es temporal y el pelo vuelve a su forma con el agua?",
         opciones: [
           "Porque solo se rompen puentes de hidrógeno, que se restablecen con el agua",
@@ -364,6 +409,7 @@ const partes = [
     preguntas: [
       /* ---------- Tema 1: biomoléculas inorgánicas y agua ---------- */
       {
+        tema: "tema-01",
         texto: "¿Cuál es la expresión de la ecuación de Henderson-Hasselbalch para un ácido débil [HA] y su base conjugada [A⁻]?",
         opciones: [
           "pH = −log [H⁺] + [HA]",
@@ -375,6 +421,7 @@ const partes = [
         explicacion: "La ecuación de Henderson-Hasselbalch, pH = pKa + log ([A⁻]/[HA]), permite calcular el pH de un tampón a partir del pKa y de las concentraciones del ácido y de su base conjugada."
       },
       {
+        tema: "tema-01",
         texto: "Un paciente hipoventila y retiene CO₂. ¿Qué alteración presenta y cómo la compensa el riñón?",
         opciones: [
           "Alcalosis respiratoria; excretando bicarbonato",
@@ -388,6 +435,7 @@ const partes = [
 
       /* ---------- Tema 2: aminoácidos y enlace peptídico ---------- */
       {
+        tema: "tema-02",
         texto: "¿Cómo se comporta un aminoácido cuando el pH del medio baja (medio ácido)?",
         opciones: [
           "Capta protones, actuando como base débil, y su carga neta pasa a ser +1",
@@ -399,6 +447,7 @@ const partes = [
         explicacion: "En medio ácido aumenta la [H⁺] y el aminoácido capta protones, actuando como base débil (carga neta +1). En medio básico cede protones, actuando como ácido débil (carga neta −1). Es reversible."
       },
       {
+        tema: "tema-02",
         texto: "¿Cuál de los siguientes es un aminoácido NO proteico?",
         opciones: ["L-Treonina", "L-Ornitina", "L-Isoleucina", "L-Glutamina"],
         correcta: 1,
@@ -407,12 +456,14 @@ const partes = [
 
       /* ---------- Tema 3: estructura y clasificación de proteínas ---------- */
       {
+        tema: "tema-03",
         texto: "En la hélice α, con n = 3,6 residuos por vuelta y un paso p = 5,4 Å, ¿cuánto avanza la hélice por cada residuo (d)?",
         opciones: ["0,54 Å", "3,6 Å", "1,5 Å", "19,4 Å"],
         correcta: 2,
         explicacion: "El paso de hélice cumple p = n × d. Despejando, d = p / n = 5,4 / 3,6 = 1,5 Å por residuo."
       },
       {
+        tema: "tema-03",
         texto: "¿Cómo está formado un giro β?",
         opciones: [
           "Por 2 aminoácidos unidos por un puente disulfuro",
@@ -426,6 +477,7 @@ const partes = [
 
       /* ---------- Tema 4: proteínas transportadoras de oxígeno ---------- */
       {
+        tema: "tema-04",
         texto: "¿Qué movimiento a nivel del hemo desencadena el cambio conformacional de la hemoglobina al unirse el O₂?",
         opciones: [
           "El Fe²⁺ se oxida a Fe³⁺ y se separa de la globina",
@@ -437,6 +489,7 @@ const partes = [
         explicacion: "Al unirse el O₂, el ion ferroso se desplaza hacia el interior del plano del hemo y arrastra a la histidina proximal. Ese movimiento se transmite a toda la molécula (paso de T a R) y es la base de la cooperatividad positiva."
       },
       {
+        tema: "tema-04",
         texto: "En una situación de hipoxia mantenida, ¿qué adaptación se produce en el eritrocito y con qué efecto?",
         opciones: [
           "Aumenta el 2,3-BPG, que estabiliza el estado T y favorece la entrega de O₂ a los tejidos",
@@ -448,6 +501,7 @@ const partes = [
         explicacion: "El 2,3-BPG puede aumentar en casos de hipoxia mantenida. Se une a la forma desoxi, estabiliza el estado T y disminuye la afinidad por el O₂, lo que favorece su cesión a los tejidos."
       },
       {
+        tema: "tema-04",
         texto: "En la nomenclatura «His F8» de la histidina proximal, ¿qué indican la letra y el número?",
         opciones: [
           "La F indica fenilalanina y el 8 el número de hemos",
@@ -459,6 +513,7 @@ const partes = [
         explicacion: "La globina está formada por 8 hélices α nombradas de la A a la H. F8 es el octavo residuo de la hélice F (histidina proximal) y E7 el séptimo de la hélice E (histidina distal)."
       },
       {
+        tema: "tema-04",
         texto: "¿Por qué la mioglobina no puede presentar cooperatividad en la unión del O₂?",
         opciones: [
           "Porque su hierro está en estado férrico",
@@ -472,12 +527,14 @@ const partes = [
 
       /* ---------- Tema 5: proteínas del plasma y lipoproteínas ---------- */
       {
+        tema: "tema-05",
         texto: "¿En qué fracción del proteinograma migran la haptoglobina, la ceruloplasmina y la α2-macroglobulina?",
         opciones: ["Albúmina", "α1-globulinas", "β-globulinas", "α2-globulinas"],
         correcta: 3,
         explicacion: "Las tres pertenecen a las α2-globulinas. En las α1 están la α1-antitripsina y el orosomucoide; en las β, la transferrina y la hemopexina; en las γ, las inmunoglobulinas."
       },
       {
+        tema: "tema-05",
         texto: "¿Cómo se comportan la haptoglobina y la hemopexina en la hemólisis intravascular y en la inflamación?",
         opciones: [
           "Ambas disminuyen en la hemólisis; en la inflamación la haptoglobina aumenta y la hemopexina no varía",
@@ -489,6 +546,7 @@ const partes = [
         explicacion: "En la hemólisis intravascular ambas se consumen y su concentración baja. En los procesos inflamatorios la haptoglobina aumenta, mientras que la hemopexina, a diferencia de ella, no varía."
       },
       {
+        tema: "tema-05",
         texto: "¿Por qué la transferrina refleja mejor que la albúmina el aporte nutricional reciente?",
         opciones: [
           "Porque no se sintetiza en el hígado",
@@ -500,6 +558,7 @@ const partes = [
         explicacion: "La transferrina tiene una vida media corta (8-10 días) y su síntesis hepática está muy afectada por el suministro de aminoácidos. La albúmina perdura unos 21 días, así que tarda más en reflejar los cambios."
       },
       {
+        tema: "tema-05",
         texto: "¿Cuál de las siguientes afirmaciones sobre la albúmina es FALSA?",
         opciones: [
           "Es una proteína de carácter ácido con carga negativa",
@@ -511,6 +570,7 @@ const partes = [
         explicacion: "La albúmina carece de carbohidratos. Es una cadena polipeptídica de carácter ácido y carga negativa (muy soluble), multiligando y muy estable gracias a sus 17 puentes disulfuro."
       },
       {
+        tema: "tema-05",
         texto: "¿Cuántos dominios tienen las cadenas pesadas y ligeras de una inmunoglobulina?",
         opciones: [
           "Pesada: 2 (1 constante y 1 variable); ligera: 4 (3 constantes y 1 variable)",
@@ -522,6 +582,7 @@ const partes = [
         explicacion: "La cadena pesada consta de 4 dominios (tres constantes y uno variable) y la ligera de 2 (uno constante y uno variable). Las regiones variables forman el paratopo, que reconoce el epítopo del antígeno."
       },
       {
+        tema: "tema-05",
         texto: "¿Cuál es el orden correcto de las lipoproteínas de menor a mayor densidad (y, por tanto, de mayor a menor tamaño)?",
         opciones: [
           "Quilomicrones < VLDL < IDL < LDL < HDL",
@@ -535,6 +596,7 @@ const partes = [
 
       /* ---------- Tema 6: escleroproteínas ---------- */
       {
+        tema: "tema-06",
         texto: "¿Cómo se organiza la triple hélice del colágeno?",
         opciones: [
           "Tres hélices dextrógiras enrolladas en una superhélice levógira",
@@ -546,6 +608,7 @@ const partes = [
         explicacion: "La hélice de colágeno consiste en el enrollamiento dextrógiro de tres hélices levógiras. La estructura se estabiliza por puentes de hidrógeno y enlaces covalentes cruzados entre las cadenas."
       },
       {
+        tema: "tema-06",
         texto: "Durante la cicatrización de una herida, ¿en qué orden aparecen los tipos de colágeno?",
         opciones: [
           "Primero el tipo I y después es sustituido por el tipo III",
@@ -557,12 +620,14 @@ const partes = [
         explicacion: "En la cicatrización (inflamación, proliferación y maduración) primero se deposita colágeno tipo III, que después es retirado y sustituido por el tipo I, el que aporta mayor fuerza de tensión."
       },
       {
+        tema: "tema-06",
         texto: "Una alteración genética que cursa con extrema elasticidad de los ligamentos e hipermovilidad de las articulaciones corresponde a:",
         opciones: ["Osteogénesis imperfecta", "Escorbuto", "Esclerodermia", "Síndrome de Ehlers-Danlos"],
         correcta: 3,
         explicacion: "El síndrome de Ehlers-Danlos se debe al déficit de componentes necesarios para la síntesis, maduración y organización del colágeno. En la osteogénesis imperfecta la triple hélice es inestable y predominan las fracturas."
       },
       {
+        tema: "tema-06",
         texto: "¿Qué ocurre en la queratina del cabello cuando se aplica calor por encima de 200 °C?",
         opciones: [
           "Se rompen puentes disulfuro: el daño es permanente y el pelo queda quebradizo, con las puntas abiertas",
@@ -575,152 +640,5 @@ const partes = [
       }
     ]
   }
-];
-
-const preguntas = partes.flatMap((parte) => parte.preguntas);
-
-const formulario = document.getElementById("cuestionario");
-const resultado = document.getElementById("resultado");
-const botonCorregir = document.getElementById("corregir");
-const botonReiniciar = document.getElementById("reiniciar");
-const ventana = document.getElementById("ventana");
-const ventanaTexto = document.getElementById("ventana-texto");
-const botonCerrar = document.getElementById("cerrar");
-
-/* ---------- Construir el cuestionario ---------- */
-function crearCuestionario() {
-  let i = 0;
-
-  partes.forEach((parte) => {
-    const titulo = document.createElement("h2");
-    titulo.className = "parte-titulo";
-    titulo.textContent = parte.titulo;
-    formulario.append(titulo);
-
-    parte.preguntas.forEach((p) => {
-      formulario.append(crearPregunta(p, i));
-      i++;
-    });
-  });
-}
-
-function crearPregunta(p, i) {
-  const tarjeta = document.createElement("article");
-  tarjeta.className = "pregunta";
-
-  const cabecera = document.createElement("div");
-  cabecera.className = "pregunta-cabecera";
-
-  const numero = document.createElement("span");
-  numero.className = "pregunta-numero";
-  numero.textContent = `Pregunta ${i + 1} de ${preguntas.length}`;
-
-  const botonExplicacion = document.createElement("button");
-  botonExplicacion.type = "button";
-  botonExplicacion.className = "boton-explicacion";
-  botonExplicacion.textContent = "Explicación";
-  botonExplicacion.addEventListener("click", () => abrirExplicacion(p.explicacion));
-
-  cabecera.append(numero, botonExplicacion);
-
-  const texto = document.createElement("p");
-  texto.className = "pregunta-texto";
-  texto.textContent = p.texto;
-
-  const grupo = document.createElement("fieldset");
-  grupo.className = "opciones";
-
-  p.opciones.forEach((opcion, j) => {
-    const etiqueta = document.createElement("label");
-    etiqueta.className = "opcion";
-
-    const radio = document.createElement("input");
-    radio.type = "radio";
-    radio.name = `pregunta-${i}`;
-    radio.value = j;
-    radio.addEventListener("change", () => marcarSeleccion(grupo));
-
-    const marca = document.createElement("span");
-    marca.className = "marca";
-    marca.setAttribute("aria-hidden", "true");
-
-    const contenido = document.createElement("span");
-    contenido.textContent = opcion;
-
-    etiqueta.append(radio, marca, contenido);
-    grupo.append(etiqueta);
-  });
-
-  tarjeta.append(cabecera, texto, grupo);
-  return tarjeta;
-}
-
-/* ---------- Selección (azul) ---------- */
-function marcarSeleccion(grupo) {
-  grupo.querySelectorAll(".opcion").forEach((etiqueta) => {
-    const marcada = etiqueta.querySelector("input").checked;
-    etiqueta.classList.toggle("seleccionada", marcada);
-  });
-}
-
-/* ---------- Corregir (verde / rojo) ---------- */
-function corregir() {
-  let aciertos = 0;
-
-  document.querySelectorAll(".opciones").forEach((grupo, i) => {
-    const etiquetas = grupo.querySelectorAll(".opcion");
-
-    etiquetas.forEach((etiqueta, j) => {
-      const radio = etiqueta.querySelector("input");
-      etiqueta.classList.remove("seleccionada", "correcta", "incorrecta");
-
-      if (j === preguntas[i].correcta) {
-        etiqueta.classList.add("correcta");
-        if (radio.checked) aciertos++;
-      } else if (radio.checked) {
-        etiqueta.classList.add("incorrecta");
-      }
-
-      radio.disabled = true;
-    });
-  });
-
-  formulario.classList.add("corregido");
-  resultado.textContent = `Has acertado ${aciertos} de ${preguntas.length}`;
-  botonCorregir.hidden = true;
-  botonReiniciar.hidden = false;
-}
-
-/* ---------- Volver a intentar ---------- */
-function reiniciar() {
-  formulario.reset();
-  formulario.classList.remove("corregido");
-
-  document.querySelectorAll(".opcion").forEach((etiqueta) => {
-    etiqueta.classList.remove("seleccionada", "correcta", "incorrecta");
-    etiqueta.querySelector("input").disabled = false;
-  });
-
-  resultado.textContent = "";
-  botonCorregir.hidden = false;
-  botonReiniciar.hidden = true;
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
-
-/* ---------- Ventana de explicación ---------- */
-function abrirExplicacion(texto) {
-  ventanaTexto.textContent = texto;
-  ventana.showModal();
-}
-
-botonCerrar.addEventListener("click", () => ventana.close());
-
-// Cerrar al hacer clic fuera de la ventana
-ventana.addEventListener("click", (evento) => {
-  if (evento.target === ventana) ventana.close();
-});
-
-botonCorregir.addEventListener("click", corregir);
-botonReiniciar.addEventListener("click", reiniciar);
-
-crearCuestionario();
+]
+};

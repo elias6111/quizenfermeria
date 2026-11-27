@@ -7,6 +7,7 @@ const fisiologiaBloque4 = {
     /* ---------- Tema 16: principios básicos de la función renal ---------- */
     {
       id: "t16",
+      tema: "tema-16",
       numero: "16",
       titulo: "Principios básicos de la función renal",
       preguntas: [
@@ -121,6 +122,7 @@ const fisiologiaBloque4 = {
     /* ---------- Tema 17 (1): filtración glomerular ---------- */
     {
       id: "t17",
+      tema: "tema-17",
       numero: "17",
       titulo: "Filtración glomerular",
       preguntas: [
@@ -210,6 +212,7 @@ const fisiologiaBloque4 = {
     /* ---------- Tema 17 (2): reabsorción, secreción y aclaramiento ---------- */
     {
       id: "t17b",
+      tema: "tema-17",
       numero: "17",
       titulo: "Transporte tubular y aclaramiento",
       preguntas: [
@@ -309,6 +312,7 @@ const fisiologiaBloque4 = {
     /* ---------- Tema 18 (1): agua, ADH y sodio ---------- */
     {
       id: "t18",
+      tema: "tema-18",
       numero: "18",
       titulo: "Regulación del agua y del sodio",
       preguntas: [
@@ -418,6 +422,7 @@ const fisiologiaBloque4 = {
     /* ---------- Tema 18 (2): equilibrio ácido-base ---------- */
     {
       id: "t18b",
+      tema: "tema-18",
       numero: "18",
       titulo: "Equilibrio ácido-base",
       preguntas: [
@@ -507,6 +512,7 @@ const fisiologiaBloque4 = {
     /* ---------- Tema 19: micción ---------- */
     {
       id: "t19",
+      tema: "tema-19",
       numero: "19",
       titulo: "Micción",
       preguntas: [
@@ -600,6 +606,7 @@ const fisiologiaBloque4 = {
       titulo: "Repaso del bloque IV",
       preguntas: [
         {
+          tema: "tema-16",
           texto: "¿Qué diferencia hay entre secreción y excreción renal?",
           opciones: [
             "Son lo mismo",
@@ -611,12 +618,14 @@ const fisiologiaBloque4 = {
           explicacion: "La secreción pasa sustancias del capilar peritubular al túbulo; la excreción es la salida final de la orina al exterior."
         },
         {
+          tema: "tema-16",
           texto: "¿Qué segmento de la nefrona solo reabsorbe y no secreta?",
           opciones: ["El túbulo proximal", "El túbulo distal", "El conducto colector", "El asa de Henle"],
           correcta: 3,
           explicacion: "Glomérulo: solo filtración; túbulo proximal, distal y colector: reabsorción y secreción; asa de Henle: solo reabsorción."
         },
         {
+          tema: "tema-17",
           texto: "¿Por qué baja la presión oncótica en la cápsula de Bowman hasta casi 0 mmHg?",
           opciones: [
             "Porque el filtrado normal casi no tiene proteínas",
@@ -628,6 +637,7 @@ const fisiologiaBloque4 = {
           explicacion: "Las proteínas no atraviesan la barrera de filtración, así que en el espacio de Bowman no generan presión oncótica (salvo en enfermedades con proteinuria)."
         },
         {
+          tema: "tema-17",
           texto: "La angiotensina II contrae sobre todo la arteriola eferente. ¿Qué efecto tiene esto en la TFG cuando baja la presión arterial?",
           opciones: [
             "La reduce a cero",
@@ -639,6 +649,7 @@ const fisiologiaBloque4 = {
           explicacion: "Al contraer la salida del glomérulo sube su presión hidrostática y se preserva la filtración aunque la presión arterial haya bajado."
         },
         {
+          tema: "tema-17",
           texto: "Un paciente tiene la creatinina plasmática alta. ¿Qué es lo más probable?",
           opciones: [
             "Que tiene mucha masa muscular y el riñón sano siempre",
@@ -650,12 +661,14 @@ const fisiologiaBloque4 = {
           explicacion: "Si el riñón filtra menos, la creatinina no se elimina y sube en sangre: es el marcador clínico habitual de la función renal."
         },
         {
+          tema: "tema-17",
           texto: "¿Qué líquido llega al túbulo distal desde la rama ascendente gruesa del asa de Henle?",
           opciones: ["Isoosmótico", "Hiperosmótico", "Hipoosmótico", "Sin solutos"],
           correcta: 2,
           explicacion: "La rama ascendente reabsorbe NaCl pero no agua, así que el líquido que sale está diluido (hipoosmótico). Que la orina final sea concentrada o no depende de la ADH."
         },
         {
+          tema: "tema-18",
           texto: "Una persona suda mucho en una maratón y no bebe. ¿Cómo será su orina?",
           opciones: [
             "Abundante y diluida",
@@ -667,12 +680,14 @@ const fisiologiaBloque4 = {
           explicacion: "Balance de agua negativo → sube la osmolaridad → se libera ADH → se reabsorbe agua en el colector → poca orina, hiperosmótica y de densidad elevada."
         },
         {
+          tema: "tema-18",
           texto: "¿Qué hormona aumenta la secreción de K⁺ en la orina?",
           opciones: ["La aldosterona", "La ADH", "El péptido natriurético", "La eritropoyetina"],
           correcta: 0,
           explicacion: "La aldosterona aumenta la reabsorción de Na⁺ y, a la vez, la secreción de K⁺ en las células principales. Por eso su exceso produce hipopotasemia."
         },
         {
+          tema: "tema-18",
           texto: "¿Qué enzima convierte la angiotensina I en angiotensina II y dónde actúa sobre todo?",
           opciones: [
             "La renina, en el riñón",
@@ -684,6 +699,7 @@ const fisiologiaBloque4 = {
           explicacion: "La ECA, abundante en el endotelio pulmonar, transforma la angiotensina I en II. Los IECA (enalapril, captopril) bloquean esta enzima y bajan la presión."
         },
         {
+          tema: "tema-19",
           texto: "En la fase de vaciamiento de la vejiga…",
           opciones: [
             "Se activa el simpático y se contrae el esfínter interno",
