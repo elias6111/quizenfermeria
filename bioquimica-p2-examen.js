@@ -1,6 +1,6 @@
-// Fisiología · Parcial 2 · Examen general: 40 preguntas de todos los temas, con lo más importante.
+// Bioquímica · Parcial 2 · Examen general: 40 preguntas de todos los temas, con lo más importante.
 // Cada pregunta lleva su "tema" (archivo del apunte) para Mis fallos y Test a medida.
-const fisio2Examen = {
+const bioqP2Examen = {
   titulo: "Examen general",
   tests: [
     {
@@ -44,7 +44,7 @@ const fisio2Examen = {
         {
           tema: "tema-07",
           texto: "¿Qué tipo de inhibición muestra la gráfica de Lineweaver-Burk (las rectas cortan el eje x en el mismo punto)?",
-          imagen: { src: "img/fisiologia2/lineweaver-no-competitiva.svg", alt: "Rectas de Lineweaver-Burk que cortan el eje 1/[S] en el mismo punto" },
+          imagen: { src: "img/bioquimica-p2/lineweaver-no-competitiva.svg", alt: "Rectas de Lineweaver-Burk que cortan el eje 1/[S] en el mismo punto" },
           opciones: [
             "No competitiva: baja la Vmáx y la Km no cambia",
             "Competitiva: sube la Km y la Vmáx no cambia",
@@ -166,7 +166,7 @@ const fisio2Examen = {
         {
           tema: "tema-08-2",
           texto: "¿Qué intermediario del ciclo de Krebs se usa para sintetizar el grupo hemo?",
-          imagen: { src: "img/fisiologia2/krebs.svg", alt: "Ciclo de Krebs con sus intermediarios" },
+          imagen: { src: "img/bioquimica-p2/krebs.svg", alt: "Ciclo de Krebs con sus intermediarios" },
           opciones: ["Succinil-CoA", "Citrato", "Fumarato", "Malato"],
           correcta: 0,
           explicacion: "Glicina + succinil-CoA → ALA, primer paso de la síntesis del hemo (tema 12)."
@@ -174,7 +174,7 @@ const fisio2Examen = {
         {
           tema: "tema-08-2",
           texto: "En la cadena respiratoria, ¿qué molécula lleva los electrones del complejo III al IV?",
-          imagen: { src: "img/fisiologia2/cadena-respiratoria.svg", alt: "Cadena transportadora de electrones" },
+          imagen: { src: "img/bioquimica-p2/cadena-respiratoria.svg", alt: "Cadena transportadora de electrones" },
           opciones: ["Citocromo c", "Coenzima Q (ubiquinona)", "FADH₂", "ATP sintasa"],
           correcta: 0,
           explicacion: "La coenzima Q lleva electrones de I y II al III; el citocromo c, del III al IV."
@@ -269,7 +269,7 @@ const fisio2Examen = {
         {
           tema: "tema-10",
           texto: "En la β-oxidación, el primer paso de cada vuelta lo cataliza la acil-CoA deshidrogenasa, que produce…",
-          imagen: { src: "img/fisiologia2/beta-oxidacion.svg", alt: "Las cuatro reacciones de la β-oxidación" },
+          imagen: { src: "img/bioquimica-p2/beta-oxidacion.svg", alt: "Las cuatro reacciones de la β-oxidación" },
           opciones: ["FADH₂", "NADH", "NADPH", "ATP"],
           correcta: 0,
           explicacion: "Paso 1: FADH₂; paso 3 (3-hidroxiacil-CoA deshidrogenasa): NADH."

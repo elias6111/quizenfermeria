@@ -1,6 +1,6 @@
-// Fisiología · Parcial 2 · Tema 11: Metabolismo de aminoácidos.
+// Bioquímica · Parcial 2 · Tema 11: Metabolismo de aminoácidos.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción). "imagen" es opcional.
-const fisio2Tema11 = {
+const bioqP2Tema11 = {
   titulo: "Tema 11 · Metabolismo de aminoácidos",
   tests: [
     {
@@ -108,7 +108,7 @@ const fisio2Tema11 = {
         },
         {
           texto: "¿Cuál es el primer intermediario del ciclo de la urea y qué enzima lo forma?",
-          imagen: { src: "img/fisiologia2/ciclo-urea.svg", alt: "Esquema del ciclo de la urea entre mitocondria y citoplasma" },
+          imagen: { src: "img/bioquimica-p2/ciclo-urea.svg", alt: "Esquema del ciclo de la urea entre mitocondria y citoplasma" },
           opciones: [
             "Carbamoil fosfato, por la carbamoil fosfato sintetasa I (mitocondrial)",
             "Carbamoil fosfato, por la carbamoil fosfato sintetasa II (citosólica)",
@@ -120,7 +120,7 @@ const fisio2Tema11 = {
         },
         {
           texto: "En el esquema, ¿qué aminoácido entra en el punto 1 y aporta el segundo nitrógeno de la urea?",
-          imagen: { src: "img/fisiologia2/ciclo-urea.svg", alt: "Esquema del ciclo de la urea con el punto 1 señalado" },
+          imagen: { src: "img/bioquimica-p2/ciclo-urea.svg", alt: "Esquema del ciclo de la urea con el punto 1 señalado" },
           opciones: ["Aspartato", "Glutamato", "Alanina", "Glicina"],
           correcta: 0,
           explicacion: "La urea tiene dos grupos amino: uno del amoníaco que inicia el ciclo y otro del aspartato."

@@ -1,4 +1,4 @@
-// Listado de los tests cortos de una colección (Fisiología o Fisiología · Parcial 2) agrupados por bloques.
+// Listado de los tests cortos de una colección (Fisiología o Bioquímica · Parcial 2) agrupados por bloques.
 // La colección se elige con <body data-coleccion="...">; por defecto, Fisiología.
 // Cada tarjeta enlaza a test.html?test=<id> y muestra la mejor nota guardada en este navegador.
 const coleccion =

@@ -51,7 +51,7 @@ function mostrarAsignaturas() {
   pintarMigas([["Inicio", "index.html"], ["Apuntes"]]);
   document.title = "Apuntes · Quiz de enfermería";
 
-  const lista = asignaturasApuntes
+  const lista = asignaturasApuntes.filter((a) => !a.sinApuntes)
     .map((asignatura) => {
       const numTemas = asignatura.bloques.reduce((total, bloque) => total + bloque.temas.length, 0);
       return `
@@ -156,7 +156,7 @@ function mostrarVisor(asignatura, tema) {
 /* ---------- Enrutado por hash ---------- */
 function mostrarVista() {
   const [idAsignatura, archivo] = location.hash.slice(1).split("/");
-  const asignatura = asignaturasApuntes.find((a) => a.id === idAsignatura);
+  const asignatura = asignaturasApuntes.find((a) => a.id === idAsignatura && !a.sinApuntes);
   const tema = asignatura && archivo ? buscarTema(asignatura, archivo) : null;
 
   if (tema) mostrarVisor(asignatura, tema);

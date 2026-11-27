@@ -1,6 +1,6 @@
-// Fisiología · Parcial 2 · Tema 12 (I): Nucleósidos, nucleótidos, polinucleótidos y su metabolismo.
+// Bioquímica · Parcial 2 · Tema 12 (I): Nucleósidos, nucleótidos, polinucleótidos y su metabolismo.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción). "imagen" es opcional.
-const fisio2Tema12Nucleotidos = {
+const bioqP2Tema12Nucleotidos = {
   titulo: "Tema 12 (I) · Nucleótidos y su metabolismo",
   tests: [
     {
@@ -12,7 +12,7 @@ const fisio2Tema12Nucleotidos = {
       preguntas: [
         {
           texto: "¿Cuál de las dos estructuras del esquema es una purina?",
-          imagen: { src: "img/fisiologia2/purina-pirimidina.svg", alt: "Dos bases nitrogenadas: A con un anillo y B con dos anillos fusionados" },
+          imagen: { src: "img/bioquimica-p2/purina-pirimidina.svg", alt: "Dos bases nitrogenadas: A con un anillo y B con dos anillos fusionados" },
           opciones: [
             "B: dos anillos fusionados (pirimidina + imidazol)",
             "A: un solo anillo de seis átomos",
@@ -36,7 +36,7 @@ const fisio2Tema12Nucleotidos = {
         },
         {
           texto: "En el nucleósido, ¿por qué nitrógeno se une una base pirimidínica a la pentosa?",
-          imagen: { src: "img/fisiologia2/purina-pirimidina.svg", alt: "Pirimidina (A) y purina (B) con sus nitrógenos numerados" },
+          imagen: { src: "img/bioquimica-p2/purina-pirimidina.svg", alt: "Pirimidina (A) y purina (B) con sus nitrógenos numerados" },
           opciones: ["N1 (y las púricas por el N9)", "N3 (y las púricas por el N7)", "N9 (y las púricas por el N1)", "N7 (y las púricas por el N3)"],
           correcta: 0,
           explicacion: "Enlace β-N-glucosídico entre el C1' del azúcar y el N1 de las pirimidinas o el N9 de las purinas."

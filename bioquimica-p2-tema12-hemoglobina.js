@@ -1,6 +1,6 @@
-// Fisiología · Parcial 2 · Tema 12 (II): Metabolismo de la hemoglobina.
+// Bioquímica · Parcial 2 · Tema 12 (II): Metabolismo de la hemoglobina.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción). "imagen" es opcional.
-const fisio2Tema12Hemoglobina = {
+const bioqP2Tema12Hemoglobina = {
   titulo: "Tema 12 (II) · Metabolismo de la hemoglobina",
   tests: [
     {
@@ -127,7 +127,7 @@ const fisio2Tema12Hemoglobina = {
         },
         {
           texto: "¿Cuál es el orden de la degradación del hemo?",
-          imagen: { src: "img/fisiologia2/degradacion-hemo.svg", alt: "Esquema de la degradación del hemo hasta estercobilina y urobilina" },
+          imagen: { src: "img/bioquimica-p2/degradacion-hemo.svg", alt: "Esquema de la degradación del hemo hasta estercobilina y urobilina" },
           opciones: [
             "Hemo → biliverdina → bilirrubina → bilirrubina conjugada → urobilinógeno",
             "Hemo → bilirrubina → biliverdina → urobilinógeno",
@@ -139,7 +139,7 @@ const fisio2Tema12Hemoglobina = {
         },
         {
           texto: "En el esquema (punto 1), ¿cómo viaja por la sangre la bilirrubina no conjugada?",
-          imagen: { src: "img/fisiologia2/degradacion-hemo.svg", alt: "Esquema de la degradación del hemo con el punto 1 en la bilirrubina no conjugada" },
+          imagen: { src: "img/bioquimica-p2/degradacion-hemo.svg", alt: "Esquema de la degradación del hemo con el punto 1 en la bilirrubina no conjugada" },
           opciones: [
             "Unida a la albúmina, porque es insoluble en agua",
             "Disuelta libremente en el plasma",
@@ -151,7 +151,7 @@ const fisio2Tema12Hemoglobina = {
         },
         {
           texto: "¿Qué ocurre en el hígado con la bilirrubina (punto 2 del esquema)?",
-          imagen: { src: "img/fisiologia2/degradacion-hemo.svg", alt: "Esquema de la degradación del hemo con el punto 2 en la conjugación hepática" },
+          imagen: { src: "img/bioquimica-p2/degradacion-hemo.svg", alt: "Esquema de la degradación del hemo con el punto 2 en la conjugación hepática" },
           opciones: [
             "Se conjuga con dos moléculas de ácido glucurónico (diglucurónido)",
             "Se oxida a biliverdina",

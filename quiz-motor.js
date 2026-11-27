@@ -1,6 +1,6 @@
 // Página de test común (test.html). Lo que se carga depende de la URL:
 //   test.html?banco=bioquimica3                         → un cuestionario de Bioquímica completo
-//   test.html?test=t07                                  → un test corto (Fisiología o Fisiología · Parcial 2)
+//   test.html?test=t07                                  → un test corto (Fisiología o Bioquímica · Parcial 2)
 //   test.html?medida=bioquimica&temas=tema-01,tema-02&n=20 → test a medida (a-medida.html)
 //   test.html?fallos=bioquimica[&tema=tema-12]          → repaso de fallos (fallos.html)
 // Las preguntas y las opciones se barajan cada vez. Hay dos modos:

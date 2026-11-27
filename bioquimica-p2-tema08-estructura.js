@@ -1,6 +1,6 @@
-// Fisiología · Parcial 2 · Tema 8 (I): Glúcidos, estructura y función.
+// Bioquímica · Parcial 2 · Tema 8 (I): Glúcidos, estructura y función.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción). "imagen" es opcional.
-const fisio2Tema08Estructura = {
+const bioqP2Tema08Estructura = {
   titulo: "Tema 8 (I) · Glúcidos: estructura y función",
   tests: [
     {
@@ -69,7 +69,7 @@ const fisio2Tema08Estructura = {
         },
         {
           texto: "Según la proyección de Fischer, ¿este gliceraldehído es D o L?",
-          imagen: { src: "img/fisiologia2/gliceraldehido.svg", alt: "Proyección de Fischer del gliceraldehído con el OH a la derecha" },
+          imagen: { src: "img/bioquimica-p2/gliceraldehido.svg", alt: "Proyección de Fischer del gliceraldehído con el OH a la derecha" },
           opciones: [
             "D, porque el OH del carbono quiral está a la derecha",
             "L, porque el OH está a la derecha",
@@ -125,7 +125,7 @@ const fisio2Tema08Estructura = {
         },
         {
           texto: "¿Qué anómero de la glucopiranosa está dibujado (fíjate en el OH señalado)?",
-          imagen: { src: "img/fisiologia2/glucopiranosa.svg", alt: "Proyección de Haworth de la glucopiranosa con el OH del carbono 1 hacia abajo" },
+          imagen: { src: "img/bioquimica-p2/glucopiranosa.svg", alt: "Proyección de Haworth de la glucopiranosa con el OH del carbono 1 hacia abajo" },
           opciones: [
             "α, porque el OH del carbono anomérico está por debajo del plano",
             "β, porque el OH del carbono anomérico está por debajo del plano",

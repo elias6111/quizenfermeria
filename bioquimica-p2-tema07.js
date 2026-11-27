@@ -1,6 +1,6 @@
-// Fisiología · Parcial 2 · Tema 7: Enzimología.
+// Bioquímica · Parcial 2 · Tema 7: Enzimología.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción). "imagen" es opcional.
-const fisio2Tema07 = {
+const bioqP2Tema07 = {
   titulo: "Tema 7 · Enzimología",
   tests: [
     {
@@ -23,7 +23,7 @@ const fisio2Tema07 = {
         },
         {
           texto: "Fíjate en el perfil energético. ¿Qué cambia cuando actúa la enzima (línea discontinua)?",
-          imagen: { src: "img/fisiologia2/energia-activacion.svg", alt: "Perfil energético de una reacción con y sin enzima" },
+          imagen: { src: "img/bioquimica-p2/energia-activacion.svg", alt: "Perfil energético de una reacción con y sin enzima" },
           opciones: [
             "La energía de los productos",
             "La energía de activación (la altura de la barrera)",
@@ -129,7 +129,7 @@ const fisio2Tema07 = {
       preguntas: [
         {
           texto: "En la curva de Michaelis-Menten, ¿qué representan el punto 1 y el punto 2?",
-          imagen: { src: "img/fisiologia2/michaelis-menten.svg", alt: "Curva hiperbólica de Michaelis-Menten con dos puntos señalados" },
+          imagen: { src: "img/bioquimica-p2/michaelis-menten.svg", alt: "Curva hiperbólica de Michaelis-Menten con dos puntos señalados" },
           opciones: ["1 = Vmáx · 2 = Km", "1 = Km · 2 = Vmáx", "1 = kcat · 2 = Vmáx/2", "1 = Vmáx/2 · 2 = [E]"],
           correcta: 0,
           explicacion: "La meseta es la velocidad máxima (enzima saturada). La Km es la concentración de sustrato con la que se alcanza la mitad de la Vmáx."
@@ -192,7 +192,7 @@ const fisio2Tema07 = {
         },
         {
           texto: "En la gráfica de Lineweaver-Burk, las rectas con y sin inhibidor cortan el eje vertical en el mismo punto. ¿Qué tipo de inhibición es?",
-          imagen: { src: "img/fisiologia2/lineweaver-competitiva.svg", alt: "Rectas de Lineweaver-Burk que cortan el eje 1/V en el mismo punto" },
+          imagen: { src: "img/bioquimica-p2/lineweaver-competitiva.svg", alt: "Rectas de Lineweaver-Burk que cortan el eje 1/V en el mismo punto" },
           opciones: ["Competitiva", "No competitiva", "Acompetitiva", "Irreversible"],
           correcta: 0,
           explicacion: "Mismo corte en el eje 1/V = misma Vmáx. Cambia el corte con el eje x (−1/Km): la Km aumenta. Eso es la inhibición competitiva."
@@ -248,7 +248,7 @@ const fisio2Tema07 = {
         },
         {
           texto: "¿Qué curva de la gráfica corresponde a una enzima alostérica?",
-          imagen: { src: "img/fisiologia2/cinetica-sigmoide.svg", alt: "Una curva hiperbólica (A) y una sigmoidea (B)" },
+          imagen: { src: "img/bioquimica-p2/cinetica-sigmoide.svg", alt: "Una curva hiperbólica (A) y una sigmoidea (B)" },
           opciones: [
             "B, porque tiene cinética sigmoidea",
             "A, porque es hiperbólica",

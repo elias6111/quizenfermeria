@@ -6,7 +6,7 @@ const path = require("path");
 const { execFileSync } = require("child_process");
 const { pathToFileURL } = require("url");
 
-const asignaturas = require("../apuntes-datos.js");
+const asignaturas = require("../apuntes-datos.js").filter((a) => !a.sinApuntes);
 
 const carpetaFuentes = path.join(__dirname, "fuentes");
 const carpetaPdf = path.join(__dirname, "pdf");

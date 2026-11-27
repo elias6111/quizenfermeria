@@ -1,6 +1,6 @@
-// Fisiología · Parcial 2 · Tema 9: Lípidos, estructura y función.
+// Bioquímica · Parcial 2 · Tema 9: Lípidos, estructura y función.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción). "imagen" es opcional.
-const fisio2Tema09 = {
+const bioqP2Tema09 = {
   titulo: "Tema 9 · Lípidos: estructura y función",
   tests: [
     {
@@ -117,7 +117,7 @@ const fisio2Tema09 = {
         },
         {
           texto: "¿Qué fosfolipasa hidroliza el enlace señalado con el número 2?",
-          imagen: { src: "img/fisiologia2/fosfolipasas.svg", alt: "Fosfoglicérido con cuatro enlaces éster numerados" },
+          imagen: { src: "img/bioquimica-p2/fosfolipasas.svg", alt: "Fosfoglicérido con cuatro enlaces éster numerados" },
           opciones: ["Fosfolipasa A2", "Fosfolipasa A1", "Fosfolipasa C", "Fosfolipasa D"],
           correcta: 0,
           explicacion: "A1 corta el éster de C1 (1); A2 el de C2 (2); C el de C3 con el fosfato (3); D el del fosfato con el alcohol (4)."

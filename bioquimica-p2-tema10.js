@@ -1,6 +1,6 @@
-// Fisiología · Parcial 2 · Tema 10: Metabolismo de lípidos.
+// Bioquímica · Parcial 2 · Tema 10: Metabolismo de lípidos.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción). "imagen" es opcional.
-const fisio2Tema10 = {
+const bioqP2Tema10 = {
   titulo: "Tema 10 · Metabolismo de lípidos",
   tests: [
     {
@@ -146,7 +146,7 @@ const fisio2Tema10 = {
         },
         {
           texto: "¿Cuál es el orden de las cuatro reacciones de cada vuelta de β-oxidación?",
-          imagen: { src: "img/fisiologia2/beta-oxidacion.svg", alt: "Esquema de las cuatro reacciones de la β-oxidación" },
+          imagen: { src: "img/bioquimica-p2/beta-oxidacion.svg", alt: "Esquema de las cuatro reacciones de la β-oxidación" },
           opciones: [
             "Oxidación (FAD) → hidratación → oxidación (NAD⁺) → tiólisis",
             "Hidratación → oxidación → tiólisis → oxidación",

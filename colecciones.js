@@ -1,5 +1,5 @@
 // Colecciones de tests cortos: cada una tiene su página de listado (con la mejor nota de cada test)
-// y sus bloques de tests. Necesita cargados antes los fisiologia-bloque*.js y fisio2-*.js.
+// y sus bloques de tests. Necesita cargados antes los fisiologia-bloque*.js y bioquimica-p2-*.js y fisiologia-p2-*.js.
 const coleccionesTests = [
   {
     asignatura: "fisiologia",
@@ -9,21 +9,28 @@ const coleccionesTests = [
     bloques: [fisiologiaBloque1, fisiologiaBloque2, fisiologiaBloque3, fisiologiaBloque4, fisiologiaBloque5]
   },
   {
-    asignatura: "fisiologia2",
-    nombre: "Fisiología · Parcial 2",
-    pagina: "Fisiologia2.html",
-    claveResultados: "fisiologia2-resultados",
+    asignatura: "bioquimica-p2",
+    nombre: "Bioquímica · Parcial 2",
+    pagina: "BioquimicaP2.html",
+    claveResultados: "bioquimica-p2-resultados",
     bloques: [
-      fisio2Tema07,
-      fisio2Tema08Estructura,
-      fisio2Tema08Metabolismo,
-      fisio2Tema09,
-      fisio2Tema10,
-      fisio2Tema11,
-      fisio2Tema12Nucleotidos,
-      fisio2Tema12Hemoglobina,
-      fisio2Examen
+      bioqP2Tema07,
+      bioqP2Tema08Estructura,
+      bioqP2Tema08Metabolismo,
+      bioqP2Tema09,
+      bioqP2Tema10,
+      bioqP2Tema11,
+      bioqP2Tema12Nucleotidos,
+      bioqP2Tema12Hemoglobina,
+      bioqP2Examen
     ]
+  },
+  {
+    asignatura: "fisiologia-p2",
+    nombre: "Fisiología · Parcial 2",
+    pagina: "FisiologiaP2.html",
+    claveResultados: "fisiologia-p2-resultados",
+    bloques: [fisioP2Nervioso, fisioP2Endocrino, fisioP2Digestivo]
   }
 ];
 

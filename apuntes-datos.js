@@ -287,10 +287,10 @@ const asignaturasApuntes = [
     ]
   },
   {
-    id: "fisiologia2",
-    nombre: "Fisiología · Parcial 2",
+    id: "bioquimica-p2",
+    nombre: "Bioquímica · Parcial 2",
     descripcion: "Enzimología y metabolismo de glúcidos, lípidos, aminoácidos, nucleótidos y hemoglobina",
-    completo: "fisiologia2-completo",
+    completo: "bioquimica-p2-completo",
     bloques: [
       {
         titulo: "Bloque I · Enzimas y glúcidos",
@@ -352,6 +352,168 @@ const asignaturasApuntes = [
             titulo: "Metabolismo de la hemoglobina",
             esencial: "Síntesis del hemo (ALA sintasa), porfirias, degradación a bilirrubina e ictericias",
             archivo: "tema-12-2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    id: "fisiologia-p2",
+    nombre: "Fisiología · Parcial 2",
+    descripcion: "Sistema nervioso, sistema endocrino y aparato digestivo",
+    // Solo tiene tests: no sale en la sección de apuntes ni se generan PDF
+    sinApuntes: true,
+    bloques: [
+      {
+        titulo: "Bloque I · Sistema nervioso",
+        temas: [
+          {
+            numero: "26",
+            titulo: "Introducción al sistema nervioso",
+            esencial: "SNC y SNP, encéfalo, médula, pares craneales, reflejos y plasticidad",
+            archivo: "tema-26"
+          },
+          {
+            numero: "27",
+            titulo: "Principios generales de los sistemas sensoriales",
+            esencial: "Sensación y percepción, receptores, transducción y codificación",
+            archivo: "tema-27"
+          },
+          {
+            numero: "28",
+            titulo: "Sistema somatosensorial",
+            esencial: "Receptores de la piel, vías ascendentes, dermatomas, nocicepción y analgesia",
+            archivo: "tema-28"
+          },
+          {
+            numero: "29",
+            titulo: "Visión",
+            esencial: "Óptica del ojo, retina, fototransducción, vía y corteza visual",
+            archivo: "tema-29"
+          },
+          {
+            numero: "30",
+            titulo: "Audición y equilibrio",
+            esencial: "Cóclea, vía auditiva, hipoacusias y sistema vestibular",
+            archivo: "tema-30"
+          },
+          {
+            numero: "31",
+            titulo: "Gusto y olfato",
+            esencial: "Sabores, papilas, vías gustativas y olfatorias e ingesta",
+            archivo: "tema-31"
+          },
+          {
+            numero: "32",
+            titulo: "Sistema motor somático",
+            esencial: "Unidad motora, reflejos medulares, corteza motora, ganglios basales y cerebelo",
+            archivo: "tema-32"
+          }
+        ]
+      },
+      {
+        titulo: "Bloque II · Sistema endocrino",
+        temas: [
+          {
+            numero: "33",
+            titulo: "Introducción al sistema endocrino",
+            esencial: "Tipos de hormonas, retroalimentación, ejes y ritmos de secreción",
+            archivo: "tema-33"
+          },
+          {
+            numero: "34",
+            titulo: "Páncreas endocrino y balance energético",
+            esencial: "Insulina, glucagón, diabetes, leptina y obesidad",
+            archivo: "tema-34"
+          },
+          {
+            numero: "35",
+            titulo: "Control hormonal del calcio",
+            esencial: "PTH, vitamina D, calcitonina, hipo e hipercalcemia",
+            archivo: "tema-35"
+          },
+          {
+            numero: "36",
+            titulo: "Hipotálamo e hipófisis",
+            esencial: "Neuro y adenohipófisis, ADH, oxitocina y prolactina",
+            archivo: "tema-36"
+          },
+          {
+            numero: "37",
+            titulo: "Eje somatotropo",
+            esencial: "GH, IGF-I, regulación, enanismo, gigantismo y acromegalia",
+            archivo: "tema-37"
+          },
+          {
+            numero: "38",
+            titulo: "Eje tiroideo",
+            esencial: "Síntesis de T3 y T4, acciones, hipo e hipertiroidismo y bocio",
+            archivo: "tema-38"
+          },
+          {
+            numero: "39",
+            titulo: "Glándulas suprarrenales",
+            esencial: "Cortisol, aldosterona, andrógenos, médula, Cushing y Addison",
+            archivo: "tema-39"
+          },
+          {
+            numero: "40",
+            titulo: "Hormonas sexuales masculinas",
+            esencial: "Eje gonadal, Leydig y Sertoli, testosterona y diferenciación sexual",
+            archivo: "tema-40"
+          },
+          {
+            numero: "41",
+            titulo: "Hormonas femeninas, embarazo y lactancia",
+            esencial: "Ciclo menstrual, estrógenos, progesterona, hCG, parto y lactancia",
+            archivo: "tema-41"
+          }
+        ]
+      },
+      {
+        titulo: "Bloque III · Sistema digestivo",
+        temas: [
+          {
+            numero: "43",
+            titulo: "Masticación, deglución y secreción salival",
+            esencial: "Saliva, glándulas salivales, regulación y fases de la deglución",
+            archivo: "tema-43"
+          },
+          {
+            numero: "44",
+            titulo: "Motilidad y secreción gástrica",
+            esencial: "Células gástricas, jugo gástrico, fases de secreción y vaciamiento",
+            archivo: "tema-44"
+          },
+          {
+            numero: "45",
+            titulo: "Motilidad y secreción intestinal",
+            esencial: "Estructura del intestino delgado, jugo intestinal y motilidad",
+            archivo: "tema-45"
+          },
+          {
+            numero: "46",
+            titulo: "Páncreas exocrino",
+            esencial: "Jugo pancreático, zimógenos, secretina, CCK y pancreatitis",
+            archivo: "tema-46"
+          },
+          {
+            numero: "47",
+            titulo: "Función digestiva del hígado",
+            esencial: "Bilis, sales biliares, circulación enterohepática y vesícula",
+            archivo: "tema-47"
+          },
+          {
+            numero: "48",
+            titulo: "Digestión y absorción intestinal",
+            esencial: "Hidratos de carbono, proteínas, lípidos, vitaminas y agua",
+            archivo: "tema-48"
+          },
+          {
+            numero: "49",
+            titulo: "Intestino grueso y defecación",
+            esencial: "Microbiota, motilidad del colon y reflejo de defecación",
+            archivo: "tema-49"
           }
         ]
       }

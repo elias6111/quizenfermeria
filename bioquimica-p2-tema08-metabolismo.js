@@ -1,6 +1,6 @@
-// Fisiología · Parcial 2 · Tema 8 (II): Metabolismo de glúcidos.
+// Bioquímica · Parcial 2 · Tema 8 (II): Metabolismo de glúcidos.
 // "correcta" es la posición de la respuesta correcta (0 = primera opción). "imagen" es opcional.
-const fisio2Tema08Metabolismo = {
+const bioqP2Tema08Metabolismo = {
   titulo: "Tema 8 (II) · Metabolismo de glúcidos",
   tests: [
     {
@@ -80,7 +80,7 @@ const fisio2Tema08Metabolismo = {
         },
         {
           texto: "¿Qué enzimas catalizan los pasos irreversibles 1, 2 y 3 del esquema?",
-          imagen: { src: "img/fisiologia2/glucolisis.svg", alt: "Esquema de la glucólisis con tres pasos irreversibles numerados" },
+          imagen: { src: "img/bioquimica-p2/glucolisis.svg", alt: "Esquema de la glucólisis con tres pasos irreversibles numerados" },
           opciones: [
             "Hexoquinasa · fosfofructoquinasa-1 · piruvato quinasa",
             "Glucoquinasa · aldolasa · enolasa",
@@ -225,14 +225,14 @@ const fisio2Tema08Metabolismo = {
         },
         {
           texto: "En el ciclo de Krebs del esquema, ¿qué enzima cataliza la reacción 1?",
-          imagen: { src: "img/fisiologia2/krebs.svg", alt: "Ciclo de Krebs con ocho reacciones numeradas" },
+          imagen: { src: "img/bioquimica-p2/krebs.svg", alt: "Ciclo de Krebs con ocho reacciones numeradas" },
           opciones: ["Citrato sintasa", "Aconitasa", "Isocitrato deshidrogenasa", "Malato deshidrogenasa"],
           correcta: 0,
           explicacion: "Reacción 1: oxalacetato (4 C) + acetil-CoA (2 C) → citrato (6 C), por la citrato sintasa. Es irreversible."
         },
         {
           texto: "En el mismo esquema, la reacción 6 (succinato → fumarato) la cataliza la succinato deshidrogenasa. ¿Qué coenzima recoge los hidrógenos?",
-          imagen: { src: "img/fisiologia2/krebs.svg", alt: "Ciclo de Krebs con ocho reacciones numeradas" },
+          imagen: { src: "img/bioquimica-p2/krebs.svg", alt: "Ciclo de Krebs con ocho reacciones numeradas" },
           opciones: ["FAD → FADH₂", "NAD⁺ → NADH", "NADP⁺ → NADPH", "Coenzima A"],
           correcta: 0,
           explicacion: "Es el único paso del ciclo que usa FAD. Las deshidrogenasas de isocitrato, α-cetoglutarato y malato usan NAD⁺."
@@ -256,7 +256,7 @@ const fisio2Tema08Metabolismo = {
         },
         {
           texto: "¿Cuál es el aceptor final de electrones de la cadena respiratoria?",
-          imagen: { src: "img/fisiologia2/cadena-respiratoria.svg", alt: "Cadena de transporte de electrones en la membrana mitocondrial interna" },
+          imagen: { src: "img/bioquimica-p2/cadena-respiratoria.svg", alt: "Cadena de transporte de electrones en la membrana mitocondrial interna" },
           opciones: ["El oxígeno, que se reduce a agua en el complejo IV", "El NAD⁺ en el complejo I", "La coenzima Q", "El ATP en el complejo V"],
           correcta: 0,
           explicacion: "NADH → complejo I → Q → complejo III → citocromo c → complejo IV (citocromo oxidasa) → O₂ → H₂O. El FADH₂ entra por el complejo II."
